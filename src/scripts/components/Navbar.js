@@ -5,7 +5,7 @@ class NavBar extends HTMLElement {
 
   render() {
     this.innerHTML = `
-      <header class="w-full bg-opacity-60 backdrop-blur-md sticky">
+      <header class="w-full bg-red-600 fixed">
         <nav class="w-full px-20 py-7 shadow">
           <div
             class="flex flex-col items-center justify-between md:flex-row md:justify-between"
@@ -13,7 +13,7 @@ class NavBar extends HTMLElement {
             <a href="#" class="flex items-center">
               <img src="./favicon.png" alt="IndoCulture" class="mr-2 h-8 w-8" />
               <span
-                class="self-center text-2xl font-semibold whitespace-nowrap text-teal-600"
+                class="self-center text-2xl font-semibold whitespace-nowrap text-white"
                 >Indo Cultural Finder</span
               >
             </a>
@@ -29,8 +29,10 @@ class NavBar extends HTMLElement {
               </a>
             </div>
 
-            <div id="navigationDrawer" class="flex items-center mt-7 md:mt-0">
-              Explore Now
+            <div id="navigationDrawer" class="flex items-center mt-7 md:mt-0 text-white">
+              <a href="#/" class="mx-5">Home</a>
+              <a href="#content" class="mx-5">Explore Now</a>
+              <a href="#" class="mx-5">About Us</a>
             </div>
           </div>
         </nav>
