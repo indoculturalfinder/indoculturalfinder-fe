@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.skip-link {
+    position: absolute;
+    padding-top: 50px;
+    top: 20px;
+    left: 0;
+    background-color: #fff1f2;
+    color: rgb(36, 33, 33);
+    padding: 8px 10px;
+    z-index: 1000;
+    opacity: 0;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 10px 10px;
+  
+  }
+   
+  .skip-link:focus {
+     top: 0;
+     display: block;
+     opacity: 1;
+  }

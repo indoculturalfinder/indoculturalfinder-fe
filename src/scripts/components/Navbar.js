@@ -30,9 +30,9 @@ class NavBar extends HTMLElement {
             </div>
 
             <div id="navigationDrawer" class="flex items-center mt-7 md:mt-0 text-white">
-              <a href="#/" class="mx-5">Home</a>
-              <a href="#content" class="mx-5">Explore Now</a>
-              <a href="#" class="mx-5">About Us</a>
+              <a href="#/" class="mx-5 transition ease-in-out delay-150 hover:bg-red-700 rounded">Home</a>
+              <a href="#content" class="mx-5 transition ease-in-out delay-150 hover:bg-red-700 rounded">Explore Now</a>
+              <a href="#aboutUs" class="mx-5 transition ease-in-out delay-150 hover:bg-red-700 rounded">About Us</a>
             </div>
           </div>
         </nav>
