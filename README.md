@@ -46,7 +46,7 @@ indoculturalfinder-fe/
 1. **Clone Repositori**
 
    ```bash
-   git clone https://github.com/username/indoculturalfinder-fe.git
+   git clone https://github.com/indoculturalfinder/indoculturalfinder-fe.git
    cd indoculturalfinder-fe
    ```
 
