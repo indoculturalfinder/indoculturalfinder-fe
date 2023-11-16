@@ -3,14 +3,13 @@ import { createCategoriesItemTemplate } from '../templates/template-creator';
 const LandingPage = {
   async render() {
     return `
-      <!-- Hero Section -->
-      <div class="hero w-full h-1/2 bg-red-600">
-        <div class="hero__inner container w-full mx-auto flex flex-wrap text-white font-sans">
-          
+      <!-- Hero Section Start -->
+      <section class="hero min-h-screen w-full h-1/2 bg-red-600">
+        <div class="hero__inner container w-full mx-auto flex flex-wrap text-white font-sans">    
             <div class="px-10 mt-44 text-center lg:text-start lg:flex-1 lg:px-20">
-              <h1 class="text-xl md:text-4xl font-semibold mb-3">Temukan Kekayaan Budaya dan Tradisi yang Penuh Warna!</h1>
-              <p class="font-semibold text-sm md:text-xl text-slate-300">Menyelami Keindahan Nusantara Bersama IndoCultureFinder: Jelajahi Warisan Indonesia yang Tak Tertandingi!</p>
-              <a href="#content" class="mt-5 inline-block px-5 py-3 border bg-white text-red-600 font-semibold rounded-xl hover:shadow-lg hover:bg-red-500 hover:text-white transition duration-300">
+              <h1 class="max-w-2xl text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl mb-6">Temukan Kekayaan Budaya dan Tradisi yang Penuh Warna!</h1>
+              <p class="max-w-2xl font-light text-gray-100 lg:mb-6 md:text-lg lg:text-xl">Menyelami Keindahan Nusantara Bersama IndoCultureFinder: Jelajahi Warisan Indonesia yang Tak Tertandingi!</p>
+              <a href="#content" class="mt-5 inline-block px-5 py-2 border bg-white text-red-600 font-semibold rounded-xl hover:shadow-lg hover:bg-red-500 hover:text-white transition duration-300">
                 Explore Now
               </a>              
             </div>
@@ -23,9 +22,10 @@ const LandingPage = {
                   />
               </div>
             </div>
-          
         </div>
-      </div>
+      </section>
+      <!-- Hero Section End -->
+
       <div class="gelombang">
         <img src="./images/gelombang.png"
         alt="gelombang" 
@@ -33,16 +33,20 @@ const LandingPage = {
       </div>
             
 
-      <!-- Content -->
-      <div class="content min-h-screen">
-        <h1 class="px-56 text-center text-4xl font-bold text-red-500 mt-30 font-sans">Ayo Kenali Keragaman Budaya Indonesia!</h1>
+      <!-- Culture Section Start -->
+      <section id="content" class="min-h-screen">
+        <h1 class="px-56 text-center text-4xl font-bold text-red-500 mt-40 font-sans">Ayo Kenali Keragaman Budaya Indonesia!</h1>
         <div id="category-list" class="container p-5 mx-auto flex flex-wrap justify-center items-center gap-5">
-          <!-- Cards Go Here -->
+        <!-- Cards Go Here -->
         </div>
+      </section> 
+      <!-- Culture Section End -->
+        
+
         <!-- about us -->
-          <div class="mt-60 mb-50 rounded-xl overflow-hidden shadow-xl" id="aboutUs">
-          <h1 class="font-bold uppercase text-red-500 text-lg mb-2xl text-3xl text-center mb-10">ABOUT US</h1>
-              <section class="flex space-x-4 justify-center">
+          <section class="min-h-screen overflow-hidden" id="aboutUs">
+            <h1 class="font-bold uppercase text-red-500 text-lg mb-2xl text-3xl text-center mb-10">ABOUT US</h1>
+              <div class="flex space-x-4 justify-center">
                 <div class="flex flex-wrap">
                   <div class="w-full px-4 mb-10 lg:w-1/3">
                       <h2 class="font-bold text-black mb-5 text-center">tentang</h2>
@@ -60,22 +64,21 @@ const LandingPage = {
                         dengan adanya manfaat manfaat tersebut diharapkan mampu menjadi pondasi bagi masyarakat dalam mempertahankan budaya.</p>
                   </div>
                 </div>
-              </section>
-          </div>
-        </div>
+              </div>
+          </section>
         <!-- about us end -->
+
         <!-- contributor -->
-          <div id="contributor-list">
-            <section>
+        <section id="contributor" class="min-h-screen">
               <div class="mt-50">CONTRIBUTOR</div>
-            </section>
-          </div>
+        </section>   
         <!-- contributor end-->
     `;
   },
 
   async afterRender() {
     // This function will run after the page is loaded
+
     const contentContainer = document.querySelector('#category-list');
     contentContainer.innerHTML += createCategoriesItemTemplate();
   },
