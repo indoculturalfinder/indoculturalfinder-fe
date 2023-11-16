@@ -56,15 +56,20 @@ indoculturalfinder-fe/
    npm install
    ```
 
-3. **Menjalankan Proyek dalam Mode Pengembangan**
+3. **Menjalankan Tailwind CSS**
+   ```
+   npm run tailwind
+   ```
+
+4. **Menjalankan Proyek dalam Mode Pengembangan**
 
    ```bash
-   npm start
+   npm run start-dev
    ```
 
    Proyek akan berjalan di [http://localhost:9000](http://localhost:9000).
 
-4. **Build untuk Produksi**
+5. **Build untuk Produksi**
 
    ```bash
    npm run build
@@ -72,9 +77,17 @@ indoculturalfinder-fe/
 
    Hasil build akan ada di direktori `dist`.
 
-### Kontribusi
+5. **Menjalankan Server untuk Mengakses Hasil Build**
+   ```
+   npm run serve
+   ```
 
-Kami senang menerima kontribusi! Silakan buka _issues_ untuk melaporkan bug atau usulan fitur, dan beri tahu kami jika Anda ingin berkontribusi dengan membuat _pull request_.
+8. **Mengelola Perubahan Menggunakan Git**
+   ```
+   git commit -m "Pesan commit Anda"
+   git push origin master
+   git pull origin master
+   ```
 
 ### Lisensi
 
