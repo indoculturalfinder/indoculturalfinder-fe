@@ -68,13 +68,75 @@ const LandingPage = {
           </section>
         <!-- about us end -->
 
-        <!-- contributor -->
-        <section id="contributor" class="min-h-screen">
-              <div class="mt-50">CONTRIBUTOR</div>
-                <section>
-                </section>
-        </section>   
-        <!-- contributor end-->
+        <!-- contributor-->
+        <section id="contributor" class="min-h-screen py-13 mt-13">
+        <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+
+            <div class="mt-50 text-3xl text-center text-red-500 text-bold">CONTRIBUTOR</div>
+            <div class=" flex justify-center md:grid-cols-3 lg-grid-cols-2 gap-2 max-w-screen-lg text flex justify-center">
+              <!-- contributor 1-->
+                <div class="container mt-8">
+                  <div class="flex flex-col">
+                    <div class="p-6 flex flex-col items-center">
+                      <img class="w-100 h-100 rounded-full object-cover" src="./images/sana-twice.webp" alt="profile photo">
+                      <h2 class="mt-5 mb-2 text-bold text-black-400 text-lg text-center">nama contributor</h2>
+                        <p class="mb-2 text-grey font-light text-center">asal univ</p>
+                    </div>
+                  </div>
+                </div>
+              <!-- contributor 1 end-->
+
+              <!-- contributor 2-->
+              <div class="container mt-8">
+              <div class="flex flex-col">
+                <div class="p-6 flex flex-col items-center">
+                  <img class="w-100 h-100 rounded-full object-cover" src="./images/sana-twice.webp" alt="profile photo">
+                  <h2 class="mt-5 mb-2 text-bold text-black-400 text-lg text-center">nama contributor</h2>
+                    <p class="mb-2 text-grey font-light text-center">asal univ</p>
+                </div>
+              </div>
+            </div>
+            <!-- contributor 2 end-->
+
+            <!-- contributor 3-->
+            <div class="container mt-8">
+              <div class="flex flex-col">
+                <div class="p-6 flex flex-col items-center">
+                  <img class="w-100 h-100 rounded-full object-cover" src="./images/sana-twice.webp" alt="profile photo">
+                  <h2 class="mt-5 mb-2 text-bold text-black-400 text-lg text-center">nama contributor</h2>
+                    <p class="mb-2 text-grey font-light text-center">asal univ</p>
+                </div>
+              </div>
+            </div>
+            <!-- contributor 3end-->
+
+            <!-- contributor 4-->
+            <div class="container mt-8 justify-center">
+              <div class="flex flex-col">
+                <div class="p-6 flex flex-col items-center">
+                  <img class="w-100 h-100 rounded-full object-cover" src="./images/sana-twice.webp" alt="profile photo">
+                  <h2 class="mt-5 mb-2 text-bold text-black-400 text-lg text-center">nama contributor</h2>
+                    <p class="mb-2 text-grey font-light text-center">asal univ</p>
+                </div>
+              </div>
+            </div>
+            <!-- contributor 4end-->
+
+            <!-- contributor 5-->
+            <div class="container mt-8 justify-center">
+              <div class="flex flex-col">
+                <div class="p-6 flex flex-col items-center">
+                  <img class="w-100 h-100 rounded-full object-cover" src="./images/sana-twice.webp" alt="profile photo">
+                  <h2 class="mt-5 mb-2 text-bold text-black-400 text-lg text-center">nama contributor</h2>
+                    <p class="mb-2 text-grey font-light text-center">asal univ</p>
+                </div>
+              </div>
+            </div>
+            <!-- contributor 5end-->
+            </div>
+        </div>
+      </section>
+      <!-- contributor end-->
     `;
   },
 
