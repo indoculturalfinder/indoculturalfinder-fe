@@ -71,6 +71,8 @@ const LandingPage = {
         <!-- contributor -->
         <section id="contributor" class="min-h-screen">
               <div class="mt-50">CONTRIBUTOR</div>
+                <section>
+                </section>
         </section>   
         <!-- contributor end-->
     `;
