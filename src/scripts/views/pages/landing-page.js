@@ -1,3 +1,4 @@
+import CultureSource from '../../data/culture-source';
 import { createCategoriesItemTemplate } from '../templates/template-creator';
 
 const LandingPage = {
@@ -31,8 +32,8 @@ const LandingPage = {
       <section id="content" class="min-h-screen mt-20 font-sans">
         <h1 class="px-10 text-center font-bold text-red-600 text-2xl md:text-4xl xl:text-5xl">Ayo Kenali Keragaman Budaya Indonesia!</h1>
         <p class="px-6 mx-auto text-center mt-1 font-base text-xs sm:text-sm md:text-lg md:px-32">Yuk, mari kita jelajahi serta mengapresiasi kekayaan keragaman budaya yang ada di Indonesia bersama-sama!</p>
-        <div id="category-list" class="container p-5 mx-auto flex flex-wrap justify-center items-center gap-5">
-        <!-- Cards Go Here -->
+        <div id="category-list" class="container grid grid-cols-1 mt-24 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <!-- Cards Go Here -->
         </div>
       </section>  
       <!-- Culture Section End -->
@@ -71,7 +72,7 @@ const LandingPage = {
         <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
 
             <div class="mt-50 text-3xl text-center text-red-500 text-bold">CONTRIBUTOR</div>
-            <div class=" flex justify-center md:grid-cols-3 lg-grid-cols-2 gap-2 max-w-screen-lg text flex justify-center">
+            <div class=" flex justify-center md:grid-cols-3 lg-grid-cols-2 gap-2 max-w-screen-lg text">
               <!-- contributor 1-->
                 <div class="container mt-8">
                   <div class="flex flex-col">
@@ -140,9 +141,11 @@ const LandingPage = {
 
   async afterRender() {
     // This function will run after the page is loaded
-
-    const contentContainer = document.querySelector('#category-list');
-    contentContainer.innerHTML += createCategoriesItemTemplate();
+    const categories = await CultureSource.getCategories();
+    const categoriesItem = document.querySelector('#category-list');
+    categories.forEach((category) => {
+      categoriesItem.innerHTML += createCategoriesItemTemplate(category);
+    });
   },
 };
 

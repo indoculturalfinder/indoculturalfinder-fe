@@ -5,7 +5,7 @@ class NavBar extends HTMLElement {
 
   render() {
     this.innerHTML = `
-      <header class="w-full bg-red-600 sticky top-0">
+      <header class="w-full bg-red-600 sticky top-0 z-50">
         <nav class="w-full px-20 py-7 shadow">
           <div
             class="flex flex-col items-center justify-between md:flex-row md:justify-between"

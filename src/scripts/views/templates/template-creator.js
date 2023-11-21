@@ -1,78 +1,65 @@
 /* eslint-disable no-unused-vars */
 import CONFIG from '../../globals/config';
 
+const createSlug = (text) => text
+  .toString()
+  .toLowerCase()
+  .trim()
+  .replace(/\s+/g, '-') // Replace spaces with -
+  .replace(/[^\w-]+/g, '') // Remove all non-word characters
+  .replace(/--+/g, '-') // Replace multiple - with single -
+// eslint-disable-next-line semi-style
+;
+
 const createCultureDetailTemplate = (culture) => `
   
 `;
 
-const createCultureItemTemplate = (culture) => `
-      
+const createCultureItemTemplate = (culture) => ` 
+  <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+      <a href="#">
+          <img class="rounded-t-lg" src="${culture.img}" alt="${culture.name}" />
+      </a>
+      <div class="p-5">
+          <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">${culture.name}</h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-700">${culture.province_name}</p>
+          <a href="#" class="inline-flex items-center text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
+              Pelajari
+              <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+              </svg>
+          </a>
+      </div>
+  </div>
 `;
 
-const createCategoriesItemTemplate = () => `
-  <a href="#/pakaian-adat">
+const createCategoriesItemTemplate = (category) => {
+  const slug = createSlug(category.name);
+
+  return `
     <figure class="max-w-sm rounded-xl overflow-hidden shadow-lg">
-    <img 
-      src="./images/pakaian-adat.jpg" 
-      alt="Culture"
-      class="w-full h-56 object-cover object-center"
-    >
-    <div class="px-6 py-4">
-      <figcaption class="text-lg font-medium">
-        <div class="text-2xl text-slate-500 mb-5">Pakaian Adat</div>
-      </figcaption>
-      
-      <blockquote>
-        <p class="text-slate-400 text-base truncate text-justify" id="overview-1">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget dui efficitur, congue libero vitae, venenatis nulla. In egestas porta eros pretium lacinia. In aliquet congue tellus. Morbi consectetur magna nec consequat porta. Cras est ipsum, vehicula quis elit vel, congue varius eros. Integer non orci accumsan, iaculis turpis non, imperdiet urna. Morbi non porta erat, at lobortis mi. Mauris ullamcorper, ex non pulvinar condimentum, nisi nisl imperdiet augue, vitae ullamcorper ante nulla vitae sem. Aenean efficitur risus sed tempor dignissim. Morbi malesuada placerat efficitur. Pellentesque sit amet dui mi. Nulla facilisi.
-        </p> 
-      </blockquote> 
-    </div> 
-  </figure>
-  </a>
-  
-  <a href="#/tarian-adat">
-    <figure class="max-w-sm rounded-xl overflow-hidden shadow-lg">
-    <img 
-      src="./images/tarian-adat.jpg"      
-      alt="Culture"
-      class="w-full h-56 object-cover object-center"
-    >
-    <div class="px-6 py-4">
-      <figcaption class="text-lg font-medium">
-        <div class="text-2xl text-slate-500 mb-5">Tarian Adat</div>
-      </figcaption>
-      
-      <blockquote>
-        <p class="text-slate-400 text-base truncate text-justify" id="overview-1">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget dui efficitur, congue libero vitae, venenatis nulla. In egestas porta eros pretium lacinia. In aliquet congue tellus. Morbi consectetur magna nec consequat porta. Cras est ipsum, vehicula quis elit vel, congue varius eros. Integer non orci accumsan, iaculis turpis non, imperdiet urna. Morbi non porta erat, at lobortis mi. Mauris ullamcorper, ex non pulvinar condimentum, nisi nisl imperdiet augue, vitae ullamcorper ante nulla vitae sem. Aenean efficitur risus sed tempor dignissim. Morbi malesuada placerat efficitur. Pellentesque sit amet dui mi. Nulla facilisi.
-        </p> 
-      </blockquote> 
-    </div> 
-  </figure>
-  </a>
-  
-  <a href="#/upacara-adat">
-    <figure class="max-w-sm rounded-xl overflow-hidden shadow-lg">
-      <img
-        src="./images/upacara-adat.jpg"
-        alt="Culture"
+      <img 
+        src="${category.img}"  
+        alt="${category.name}"
         class="w-full h-56 object-cover object-center"
       >
       <div class="px-6 py-4">
         <figcaption class="text-lg font-medium">
-          <div class="text-2xl text-slate-500 mb-5">Upacara Adat</div>
+          <div class="mb-2 text-2xl font-bold tracking-tight text-gray-900">${category.name}</div>
+          <p class="mb-3 font-normal text-gray-700 text-justify">${category.desc}</p>
+          <a href="#/${slug}" class="inline-flex items-center text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
+            Explore
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+          </a>
         </figcaption>
-        
-        <blockquote>
-          <p class="text-slate-400 text-base truncate text-justify" id="overview-1">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget dui efficitur, congue libero vitae, venenatis nulla. In egestas porta eros pretium lacinia. In aliquet congue tellus. Morbi consectetur magna nec consequat porta. Cras est ipsum, vehicula quis elit vel, congue varius eros. Integer non orci accumsan, iaculis turpis non, imperdiet urna. Morbi non porta erat, at lobortis mi. Mauris ullamcorper, ex non pulvinar condimentum, nisi nisl imperdiet augue, vitae ullamcorper ante nulla vitae sem. Aenean efficitur risus sed tempor dignissim. Morbi malesuada placerat efficitur. Pellentesque sit amet dui mi. Nulla facilisi.
-          </p> 
-        </blockquote> 
       </div> 
     </figure>
-  </a>
-`;
+  `;
+};
 
 const createLikeButtonTemplate = () => `
   <button aria-label="like this culture" id="likeButton" class="like">

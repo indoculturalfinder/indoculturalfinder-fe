@@ -1,17 +1,40 @@
-/* eslint-disable no-unused-vars */
 import API_ENDPOINT from '../globals/api-endpoint';
 
 class CultureSource {
   static async traditionalClothes() {
-    // TODO: get culture in json format
+    const response = await fetch(API_ENDPOINT.CLOTHES);
+    const responseJson = await response.json();
+    return responseJson.result;
+  }
+
+  static async traditionalFoods() {
+    const response = await fetch(API_ENDPOINT.FOODS);
+    const responseJson = await response.json();
+    return responseJson.result;
+  }
+
+  static async traditionalHouses() {
+    const response = await fetch(API_ENDPOINT.HOUSES);
+    const responseJson = await response.json();
+    return responseJson.result;
   }
 
   static async traditionalDance() {
-    // TODO: get culture in json format
+    const response = await fetch(API_ENDPOINT.DANCE);
+    const responseJson = await response.json();
+    return responseJson.result;
   }
 
   static async traditionalCeremonies() {
-    // TODO: get culture in json format
+    const response = await fetch(API_ENDPOINT.CEREMONIES);
+    const responseJson = await response.json();
+    return responseJson.result;
+  }
+
+  static async getCategories() {
+    const response = await fetch(API_ENDPOINT.CATEGORIES);
+    const responseJson = await response.json();
+    return responseJson.Categories;
   }
 }
 
