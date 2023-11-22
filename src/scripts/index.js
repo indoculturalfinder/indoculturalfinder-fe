@@ -4,7 +4,7 @@ import '../styles/input.css';
 import AOS from 'aos';
 import App from './views/app';
 import swRegister from './utils/sw-register';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
+import 'aos/dist/aos.css';
 
 // Components
 import './components/Navbar.js';

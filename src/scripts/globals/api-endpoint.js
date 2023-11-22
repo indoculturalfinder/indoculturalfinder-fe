@@ -7,6 +7,7 @@ const API_ENDPOINT = {
   HOUSES: `${CONFIG.BASE_URL}rumah-adat`,
   FOODS: `${CONFIG.BASE_URL}makanan-khas`,
   CLOTHES: `${CONFIG.BASE_URL}baju-adat`,
+  DETAIL: (id) => `${CONFIG.BASE_URL}cultures/${id}`,
 };
 
 export default API_ENDPOINT;

@@ -7,6 +7,12 @@ class CultureSource {
     return responseJson.result;
   }
 
+  static async getCulturesById(id) {
+    const response = await fetch(API_ENDPOINT.DETAIL(id.id));
+    const responseJson = await response.json();
+    return responseJson.cultures;
+  }
+
   static async traditionalFoods() {
     const response = await fetch(API_ENDPOINT.FOODS);
     const responseJson = await response.json();

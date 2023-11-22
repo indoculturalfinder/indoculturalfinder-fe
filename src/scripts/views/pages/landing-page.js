@@ -32,7 +32,7 @@ const LandingPage = {
       <section id="content" class="min-h-screen mt-20 font-sans">
         <h1 class="px-10 text-center font-bold text-red-600 text-2xl md:text-4xl xl:text-5xl" data-aos="zoom-in" data-aos-duration="1000">Ayo Kenali Keragaman Budaya Indonesia!</h1>
         <p class="px-6 mx-auto text-center mt-1 font-base text-xs sm:text-sm md:text-lg md:px-32" data-aos="zoom-in" data-aos-duration="1000">Yuk, mari kita jelajahi serta mengapresiasi kekayaan keragaman budaya yang ada di Indonesia bersama-sama!</p>
-        <div id="category-list" class="container grid grid-cols-1 mt-24 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div id="category-list" class="flex flex-wrap px-6 justify-center gap-5 mt-20">
           <!-- Cards Go Here -->
         </div>
       </section>  
