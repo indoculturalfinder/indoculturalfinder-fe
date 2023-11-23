@@ -46,7 +46,7 @@ const LandingPage = {
             <div class="flex px-2 mt-14">
               <div class="flex flex-wrap px-6 justify-center gap-5 font-sans">
                 <div class="px-6 mb-5 border rounded-lg shadow-md relative bg-white text-black hover:shadow-xl" data-aos="zoom-in" data-aos-duration="1000">
-                  <div class="w-14 h-14 justify-center items-center bg-red-200 bg-opacity-30 text-red-600 rounded-full flex absolute -top-7 left-1/2 -translate-x-1/2">
+                  <div class="w-14 h-14 justify-center items-center bg-red-200  text-red-600 rounded-full flex absolute -top-7 left-1/2 -translate-x-1/2">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                       <path d="M11.25 4.533A9.707 9.707 0 006 3a9.735 9.735 0 00-3.25.555.75.75 0 00-.5.707v14.25a.75.75 0 001 .707A8.237 8.237 0 016 18.75c1.995 0 3.823.707 5.25 1.886V4.533zM12.75 20.636A8.214 8.214 0 0118 18.75c.966 0 1.89.166 2.75.47a.75.75 0 001-.708V4.262a.75.75 0 00-.5-.707A9.735 9.735 0 0018 3a9.707 9.707 0 00-5.25 1.533v16.103z" />
                     </svg>
@@ -56,7 +56,7 @@ const LandingPage = {
                   budaya dan tradisi dari seluruh penjuru Nusantara. Melalui platform ini, pengguna dapat mengakses informasi tentang berbagai aspek budaya yang membedakan dan memperkaya Indonesia, termasuk namun tidak terbatas pada adat istiadat, seni, dan tradisi lokal.</p>
                 </div>
                 <div class="px-6 mb-5 border rounded-lg shadow-md bg-white text-black hover:shadow-xl" data-aos="zoom-in" data-aos-duration="1000">
-                  <div class="w-14 h-14 justify-center items-center bg-red-200 bg-opacity-30 text-red-600 rounded-full flex absolute -top-7 left-1/2 -translate-x-1/2">
+                  <div class="w-14 h-14 justify-center items-center bg-red-200  text-red-600 rounded-full flex absolute -top-7 left-1/2 -translate-x-1/2">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                       <path fill-rule="evenodd" d="M17.663 3.118c.225.015.45.032.673.05C19.876 3.298 21 4.604 21 6.109v9.642a3 3 0 01-3 3V16.5c0-5.922-4.576-10.775-10.384-11.217.324-1.132 1.3-2.01 2.548-2.114.224-.019.448-.036.673-.051A3 3 0 0113.5 1.5H15a3 3 0 012.663 1.618zM12 4.5A1.5 1.5 0 0113.5 3H15a1.5 1.5 0 011.5 1.5H12z" clip-rule="evenodd" />
                       <path d="M3 8.625c0-1.036.84-1.875 1.875-1.875h.375A3.75 3.75 0 019 10.5v1.875c0 1.036.84 1.875 1.875 1.875h1.875A3.75 3.75 0 0116.5 18v2.625c0 1.035-.84 1.875-1.875 1.875h-9.75A1.875 1.875 0 013 20.625v-12z" />
@@ -68,7 +68,7 @@ const LandingPage = {
                   yang ada di setiap daerah, serta mempromosikan pemahaman lintas budaya di kalangan pengguna. Dengan menyajikan konten yang informatif dan mendidik, situs ini berperan sebagai sumber pengetahuan yang menghormati serta memperkuat identitas dan keberagaman budaya Indonesia.</p>
                 </div>
                 <div class="px-6 mb-5 border rounded-lg shadow-md bg-white text-black hover:shadow-xl" data-aos="zoom-in" data-aos-duration="1000">
-                  <div class="w-14 h-14 justify-center items-center bg-red-200 bg-opacity-30 text-red-600 rounded-full flex absolute -top-7 left-1/2 -translate-x-1/2">
+                  <div class="w-14 h-14 justify-center items-center bg-red-200  text-red-600 rounded-full flex absolute -top-7 left-1/2 -translate-x-1/2">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                       <path fill-rule="evenodd" d="M7.502 6h7.128A3.375 3.375 0 0118 9.375v9.375a3 3 0 003-3V6.108c0-1.505-1.125-2.811-2.664-2.94a48.972 48.972 0 00-.673-.05A3 3 0 0015 1.5h-1.5a3 3 0 00-2.663 1.618c-.225.015-.45.032-.673.05C8.662 3.295 7.554 4.542 7.502 6zM13.5 3A1.5 1.5 0 0012 4.5h4.5A1.5 1.5 0 0015 3h-1.5z" clip-rule="evenodd" />
                       <path fill-rule="evenodd" d="M3 9.375C3 8.339 3.84 7.5 4.875 7.5h9.75c1.036 0 1.875.84 1.875 1.875v11.25c0 1.035-.84 1.875-1.875 1.875h-9.75A1.875 1.875 0 013 20.625V9.375zM6 12a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H6.75a.75.75 0 01-.75-.75V12zm2.25 0a.75.75 0 01.75-.75h3.75a.75.75 0 010 1.5H9a.75.75 0 01-.75-.75zM6 15a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H6.75a.75.75 0 01-.75-.75V15zm2.25 0a.75.75 0 01.75-.75h3.75a.75.75 0 010 1.5H9a.75.75 0 01-.75-.75zM6 18a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H6.75a.75.75 0 01-.75-.75V18zm2.25 0a.75.75 0 01.75-.75h3.75a.75.75 0 010 1.5H9a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
@@ -83,24 +83,56 @@ const LandingPage = {
         </section>
         <!-- about us end -->
 
-        <!-- our feature -->
-          <section class="min-h-screen overflow-hidden mt-20 font-sans" id="ourFeature">
-            <h1 class="font-bold font-sans text-center text-red-600 text-2xl mb-3 md:text-4xl xl:text-5xl" data-aos="zoom-in" data-aos-duration="1000">Our Feature</h1>
-            <p class="px-6 mx-auto font-sans text-center mt-1 text-xs sm:text-sm md:text-lg md:px-32 lg:px-32" data-aos="zoom-in" data-aos-duration="1000">Nikmati fitur kami!</p>
-            <div class="mt-14 px-6 font-sans grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20">
+        <!-- our tech -->
+          <section class="min-h-screen overflow-hidden mt-20 font-sans" id="ourTech">
+            <h1 class="font-bold font-sans text-center text-red-600 text-2xl mb-3 md:text-4xl xl:text-5xl" data-aos="zoom-in" data-aos-duration="1000">Our Tech</h1>
+            <p class="px-6 mx-auto font-sans text-center mt-1 text-xs sm:text-sm md:text-lg md:px-32 lg:px-32" data-aos="zoom-in" data-aos-duration="1000">Teknologi - teknologi yang kami gunakan dalam membangun website ini</p>
+            <div class="mt-14 p-6 font-sans grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
               <div class="text-center" data-aos="zoom-in" data-aos-duration="1000">
                 <div class="flex justify-center mb-6">
                   <div class="w-20 py-6 flex justify-center bg-red-200 bg-opacity-30 text-red-600 rounded-xl">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                      <path d="M11.25 5.337c0-.355-.186-.676-.401-.959a1.647 1.647 0 01-.349-1.003c0-1.036 1.007-1.875 2.25-1.875S15 2.34 15 3.375c0 .369-.128.713-.349 1.003-.215.283-.401.604-.401.959 0 .332.278.598.61.578 1.91-.114 3.79-.342 5.632-.676a.75.75 0 01.878.645 49.17 49.17 0 01.376 5.452.657.657 0 01-.66.664c-.354 0-.675-.186-.958-.401a1.647 1.647 0 00-1.003-.349c-1.035 0-1.875 1.007-1.875 2.25s.84 2.25 1.875 2.25c.369 0 .713-.128 1.003-.349.283-.215.604-.401.959-.401.31 0 .557.262.534.571a48.774 48.774 0 01-.595 4.845.75.75 0 01-.61.61c-1.82.317-3.673.533-5.555.642a.58.58 0 01-.611-.581c0-.355.186-.676.401-.959.221-.29.349-.634.349-1.003 0-1.035-1.007-1.875-2.25-1.875s-2.25.84-2.25 1.875c0 .369.128.713.349 1.003.215.283.401.604.401.959a.641.641 0 01-.658.643 49.118 49.118 0 01-4.708-.36.75.75 0 01-.645-.878c.293-1.614.504-3.257.629-4.924A.53.53 0 005.337 15c-.355 0-.676.186-.959.401-.29.221-.634.349-1.003.349-1.036 0-1.875-1.007-1.875-2.25s.84-2.25 1.875-2.25c.369 0 .713.128 1.003.349.283.215.604.401.959.401a.656.656 0 00.659-.663 47.703 47.703 0 00-.31-4.82.75.75 0 01.83-.832c1.343.155 2.703.254 4.077.294a.64.64 0 00.657-.642z" />
+                      <path fill-rule="evenodd" d="M3 6a3 3 0 013-3h12a3 3 0 013 3v12a3 3 0 01-3 3H6a3 3 0 01-3-3V6zm14.25 6a.75.75 0 01-.22.53l-2.25 2.25a.75.75 0 11-1.06-1.06L15.44 12l-1.72-1.72a.75.75 0 111.06-1.06l2.25 2.25c.141.14.22.331.22.53zm-10.28-.53a.75.75 0 000 1.06l2.25 2.25a.75.75 0 101.06-1.06L8.56 12l1.72-1.72a.75.75 0 10-1.06-1.06l-2.25 2.25z" clip-rule="evenodd" />
                     </svg>
-              
                   </div>
                 </div>
-                <h4 class="font-semibold text-lg md:text-2xl text-gray-900 mb-6">Flexible</h4>
-                <p class="px-3 font-normal text-gray-500 text-md md:text-xl mb-6">Sangat mudah di akses dalam kondisi apapun</p>
+                <h4 class="font-semibold text-lg md:text-2xl text-gray-900 mb-6">JavaScript</h4>
+                <p class="px-1 font-normal text-gray-500 text-md md:text-xl mb-6">JavaScript menjadi bahasa yang kami gunakan dalam membangun website</p>
+                <div class="flex items-center justify-center">
+                  <a href="#content" class="inline-block text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2">
+                    Learn more
+                  </a>
+                </div>
+              </div>
+              <div class="text-center" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="flex justify-center mb-6">
+                  <div class="w-20 py-6 flex justify-center bg-red-200 bg-opacity-30 text-red-600 rounded-xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                      <path fill-rule="evenodd" d="M14.447 3.027a.75.75 0 01.527.92l-4.5 16.5a.75.75 0 01-1.448-.394l4.5-16.5a.75.75 0 01.921-.526zM16.72 6.22a.75.75 0 011.06 0l5.25 5.25a.75.75 0 010 1.06l-5.25 5.25a.75.75 0 11-1.06-1.06L21.44 12l-4.72-4.72a.75.75 0 010-1.06zm-9.44 0a.75.75 0 010 1.06L2.56 12l4.72 4.72a.75.75 0 11-1.06 1.06L.97 12.53a.75.75 0 010-1.06l5.25-5.25a.75.75 0 011.06 0z" clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                </div>
+                <h4 class="font-semibold text-lg md:text-2xl text-gray-900 mb-6">HTML</h4>
+                <p class="px-1 font-normal text-gray-500 text-md md:text-xl mb-6">HTML bahasa markup yang kami pakai dalam membangun website ini</p>
+                <div class="flex items-center justify-center">
+                  <a href="#content" class="inline-block text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2">
+                    Learn more
+                  </a>
+                </div>
+              </div>
+              <div class="text-center" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="flex justify-center mb-6">
+                  <div class="w-20 py-6 flex justify-center bg-red-200 bg-opacity-30 text-red-600 rounded-xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                      <path fill-rule="evenodd" d="M11.622 1.602a.75.75 0 01.756 0l2.25 1.313a.75.75 0 01-.756 1.295L12 3.118 10.128 4.21a.75.75 0 11-.756-1.295l2.25-1.313zM5.898 5.81a.75.75 0 01-.27 1.025l-1.14.665 1.14.665a.75.75 0 11-.756 1.295L3.75 8.806v.944a.75.75 0 01-1.5 0V7.5a.75.75 0 01.372-.648l2.25-1.312a.75.75 0 011.026.27zm12.204 0a.75.75 0 011.026-.27l2.25 1.312a.75.75 0 01.372.648v2.25a.75.75 0 01-1.5 0v-.944l-1.122.654a.75.75 0 11-.756-1.295l1.14-.665-1.14-.665a.75.75 0 01-.27-1.025zm-9 5.25a.75.75 0 011.026-.27L12 11.882l1.872-1.092a.75.75 0 11.756 1.295l-1.878 1.096V15a.75.75 0 01-1.5 0v-1.82l-1.878-1.095a.75.75 0 01-.27-1.025zM3 13.5a.75.75 0 01.75.75v1.82l1.878 1.095a.75.75 0 11-.756 1.295l-2.25-1.312a.75.75 0 01-.372-.648v-2.25A.75.75 0 013 13.5zm18 0a.75.75 0 01.75.75v2.25a.75.75 0 01-.372.648l-2.25 1.312a.75.75 0 11-.756-1.295l1.878-1.096V14.25a.75.75 0 01.75-.75zm-9 5.25a.75.75 0 01.75.75v.944l1.122-.654a.75.75 0 11.756 1.295l-2.25 1.313a.75.75 0 01-.756 0l-2.25-1.313a.75.75 0 11.756-1.295l1.122.654V19.5a.75.75 0 01.75-.75z" clip-rule="evenodd" />
+                    </svg>
+                
+                  </div>
+                </div>
+                <h4 class="font-semibold text-lg md:text-2xl text-gray-900 mb-6">Tailwind</h4>
+                <p class="px-1 font-normal text-gray-500 text-md md:text-xl mb-6">Tailwind sebagai framework CSS kami dalam membangun website ini</p>
                 <div class="flex justify-center">
-                  <a href="#" class="flex items-center text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
+                  <a href="#" class="flex items-center text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2">
                     Learn more           
                   </a>
                 </div>
@@ -109,15 +141,14 @@ const LandingPage = {
                 <div class="flex justify-center mb-6">
                   <div class="w-20 py-6 flex justify-center bg-red-200 bg-opacity-30 text-red-600 rounded-xl">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                      <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 6a.75.75 0 00-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 000-1.5h-3.75V6z" clip-rule="evenodd" />
+                      <path fill-rule="evenodd" d="M2.25 6a3 3 0 013-3h13.5a3 3 0 013 3v12a3 3 0 01-3 3H5.25a3 3 0 01-3-3V6zm3.97.97a.75.75 0 011.06 0l2.25 2.25a.75.75 0 010 1.06l-2.25 2.25a.75.75 0 01-1.06-1.06l1.72-1.72-1.72-1.72a.75.75 0 010-1.06zm4.28 4.28a.75.75 0 000 1.5h3a.75.75 0 000-1.5h-3z" clip-rule="evenodd" />
                     </svg>
-                                  
                   </div>
                 </div>
-                <h4 class="font-semibold text-lg md:text-2xl text-gray-900 mb-6">Realtime Data</h4>
-                <p class="px-3 font-normal text-gray-500 text-md md:text-xl mb-6">Data yang kami disajikan selalu update</p>
+                <h4 class="font-semibold text-lg md:text-2xl text-gray-900 mb-6">Laravel</h4>
+                <p class="px-1 font-normal text-gray-500 text-md md:text-xl mb-6">Laravel sebagai framework PHP kami dalam backend website ini</p>
                 <div class="flex justify-center">
-                  <a href="#" class="flex items-center text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
+                  <a href="#" class="flex items-center text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2">
                     Learn more           
                   </a>
                 </div>
@@ -126,39 +157,21 @@ const LandingPage = {
                 <div class="flex justify-center mb-6">
                   <div class="w-20 py-6 flex justify-center bg-red-200 bg-opacity-30 text-red-600 rounded-xl">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                      <path d="M6 3a3 3 0 00-3 3v2.25a3 3 0 003 3h2.25a3 3 0 003-3V6a3 3 0 00-3-3H6zM15.75 3a3 3 0 00-3 3v2.25a3 3 0 003 3H18a3 3 0 003-3V6a3 3 0 00-3-3h-2.25zM6 12.75a3 3 0 00-3 3V18a3 3 0 003 3h2.25a3 3 0 003-3v-2.25a3 3 0 00-3-3H6zM17.625 13.5a.75.75 0 00-1.5 0v2.625H13.5a.75.75 0 000 1.5h2.625v2.625a.75.75 0 001.5 0v-2.625h2.625a.75.75 0 000-1.5h-2.625V13.5z" />
-                    </svg>
-
-                  </div>
-                </div>
-                <h4 class="font-semibold text-lg md:text-2xl text-gray-900 mb-6">Multiplatform</h4>
-                <p class="px-3 font-normal text-gray-500 text-md md:text-xl mb-6">Anda dapat mengakses di berbagai perangkat</p>
-                <div class="flex justify-center">
-                  <a href="#" class="flex items-center text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
-                    Learn more           
-                  </a>
-                </div>
-              </div>
-              <div class="text-center" data-aos="zoom-in" data-aos-duration="1000">
-                <div class="flex justify-center mb-6">
-                  <div class="w-20 py-6 flex justify-center bg-red-200 bg-opacity-30 text-red-600 rounded-xl">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                      <path fill-rule="evenodd" d="M9.315 7.584C12.195 3.883 16.695 1.5 21.75 1.5a.75.75 0 01.75.75c0 5.056-2.383 9.555-6.084 12.436A6.75 6.75 0 019.75 22.5a.75.75 0 01-.75-.75v-4.131A15.838 15.838 0 016.382 15H2.25a.75.75 0 01-.75-.75 6.75 6.75 0 017.815-6.666zM15 6.75a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z" clip-rule="evenodd" />
-                      <path d="M5.26 17.242a.75.75 0 10-.897-1.203 5.243 5.243 0 00-2.05 5.022.75.75 0 00.625.627 5.243 5.243 0 005.022-2.051.75.75 0 10-1.202-.897 3.744 3.744 0 01-3.008 1.51c0-1.23.592-2.323 1.51-3.008z" />
+                      <path d="M12.378 1.602a.75.75 0 00-.756 0L3 6.632l9 5.25 9-5.25-8.622-5.03zM21.75 7.93l-9 5.25v9l8.628-5.032a.75.75 0 00.372-.648V7.93zM11.25 22.18v-9l-9-5.25v8.57a.75.75 0 00.372.648l8.628 5.033z" />
                     </svg>
                   </div>
                 </div>
-                <h4 class="font-semibold text-lg md:text-2xl text-gray-900 mb-6">Easy to Use</h4>
-                <p class="px-3 font-normal text-gray-500 text-md md:text-xl mb-6">Aplikasi ini udah digunakan oleh siapapun</p>
+                <h4 class="font-semibold text-lg md:text-2xl text-gray-900 mb-6">Webpack</h4>
+                <p class="px-1 font-normal text-gray-500 text-md md:text-xl mb-6">Webpack sebagai module bundler kami dalam membangun website ini</p>
                 <div class="flex justify-center">
-                  <a href="#" class="flex items-center text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
+                  <a href="#" class="flex items-center text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2">
                     Learn more           
                   </a>
                 </div>
               </div>
             </div>
         </section>
-        <!-- our feature end -->
+        <!-- our tech end -->
 
         <!-- contributor-->
         <section id="contributor" class="min-h-screen mt-13 mb-40">
