@@ -5,11 +5,8 @@ const TraditionalHouse = {
   async render() {
     return `
       <div class="container">
-        <header class="flex justify-between items-center py-10">
-          <h2 class="text-4xl font-bold">Rumah Adat Nusantara</h2>
-        </header>
-
-        <div id="items" class="container grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"></div>
+        <h2 class="text-3xl text-center py-10 font-bold md:text-4xl md:text-left md:ms-10 md:mt-5">Rumah Adat Nusantara</h2>
+        <div id="items" class="container flex flex-wrap mb-5 justify-center gap-5 md:p-10 md:grid lg:grid md:grid-cols-2 lg:grid-cols-3"></div>
       </div>
     `;
   },

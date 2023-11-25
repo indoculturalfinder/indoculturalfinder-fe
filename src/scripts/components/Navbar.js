@@ -5,38 +5,38 @@ class NavBar extends HTMLElement {
 
   render() {
     this.innerHTML = `
-      <header class="w-full bg-red-600 sticky top-0 z-50">
-        <nav class="w-full px-20 py-7 shadow">
-          <div
-            class="flex flex-col items-center justify-between md:flex-row md:justify-between"
-          >
+      <header class="w-full bg-red-600 px-5">
+        <nav class="w-full px-4 md:px-10 py-7">
+          <div class="flex justify-between items-center md:justify-between">
             <a href="#" class="flex items-center">
-              <img src="./favicon.png" alt="IndoCulture" class="mr-2 h-8 w-8" />
-              <span
-                class="self-center text-2xl font-semibold whitespace-nowrap text-white"
-                >Indo Cultural Finder</span
-              >
+              <img src="./favicon.png" alt="IndoCulture" class="mr-2 h-10 w-10" />
+              <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Indo Cultural Finder</span>
             </a>
 
-            <div class="navbar__burger">
-              <a
-                href="#"
-                id="hamburgerButton"
-                tabindex="0"
-                aria-label="Menu"
-                role="button"
-              >
+            <div class="navbar__burger inline-block md:hidden">
+              <a href="#" id="hamburgerButton" class="space-y-2 p-3 inline-block md:hidden" tabindex="0" aria-label="Menu" role="button">
+                <div class="w-8 h-0.5 bg-white"></div>
+                <div class="w-8 h-0.5 bg-white"></div>
+                <div class="w-8 h-0.5 bg-white"></div>
               </a>
             </div>
 
-            <div id="navigationDrawer" class="flex items-center mt-7 md:mt-0 text-white">
-              <a href="#" class="mx-5 transition ease-in-out delay-150 hover:bg-red-700 rounded">Home</a>
-              <a href="#content" class="mx-5 transition ease-in-out delay-150 hover:bg-red-700 rounded">Explore Now</a>
-              <a href="#aboutUs" class="mx-5 transition ease-in-out delay-150 hover:bg-red-700 rounded">About Us</a>
+            <div id="navigationDrawer" class="flex flex-col items-start md:hidden md:mt-0 md:text-black fixed top-0 right-0 h-full w-[60%] md:w-[30rem] bg-white transform translate-x-full transition-transform z-20">
+              <a href="#" class="w-full py-3 my-3 mx-5 transition ease-in-out duration-500">Home</a>
+              <a href="#content" class="w-full py-3 my-3 mx-5 transition ease-in-out duration-500">Explore Now</a>
+              <a href="#aboutUs" class="w-full py-3 my-3 mx-5 transition ease-in-out duration-500">About Us</a>
+            </div>
+
+            <div class="hidden text-white md:inline-block">
+              <a href="#" class="mx-5 py-4 transition ease-in-out delay-150 hover:bg-red-700 rounded px-2">Home</a>
+              <a href="#content" class="mx-5 py-4 transition ease-in-out delay-150 hover:bg-red-700 rounded px-2">Explore Now</a>
+              <a href="#aboutUs" class="mx-5 py-4 transition ease-in-out delay-150 hover:bg-red-700 rounded px-2">About Us</a>
             </div>
           </div>
         </nav>
       </header>
+
+
     `;
   }
 }

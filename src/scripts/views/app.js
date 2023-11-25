@@ -1,4 +1,4 @@
-import DrawerInitiator from '../utils/drawer-initiator';
+import NavigationDrawer from '../utils/navigation-drawer';
 import UrlParser from '../routes/url-parser';
 import routes from '../routes/routes';
 
@@ -12,7 +12,7 @@ class App {
   }
 
   _initialAppShell() {
-    DrawerInitiator.init({
+    NavigationDrawer.init({
       button: this._button,
       drawer: this._drawer,
       content: this._content,
