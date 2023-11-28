@@ -42,6 +42,14 @@ class CultureSource {
     const responseJson = await response.json();
     return responseJson.Categories;
   }
+
+  static async searchTraditionalDance(tarianName) {
+    const response = await fetch(
+      API_ENDPOINT.SEARCH_TDANCE(tarianName.tarianName),
+    );
+    const responseJson = await response.json();
+    return responseJson.cultures;
+  }
 }
 
 export default CultureSource;

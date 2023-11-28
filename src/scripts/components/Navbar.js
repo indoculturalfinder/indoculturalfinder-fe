@@ -21,7 +21,7 @@ class NavBar extends HTMLElement {
               </a>
             </div>
 
-            <div id="navigationDrawer" class="flex flex-col items-start md:hidden md:mt-0 md:text-black fixed top-0 right-0 h-full w-[60%] md:w-[30rem] bg-white transform translate-x-full transition-transform z-20">
+            <div id="navigationDrawer" class="flex flex-col items-start md:hidden md:mt-0 text-gray-900 font-semibold fixed top-0 right-0 h-full w-[50%] md:w-[30rem] bg-white transform translate-x-full transition-transform z-20 shadow-lg">
               <a href="#" class="w-full py-3 my-3 mx-5 transition ease-in-out duration-500">Home</a>
               <a href="#content" class="w-full py-3 my-3 mx-5 transition ease-in-out duration-500">Explore Now</a>
               <a href="#aboutUs" class="w-full py-3 my-3 mx-5 transition ease-in-out duration-500">About Us</a>

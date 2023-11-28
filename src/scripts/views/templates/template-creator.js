@@ -87,10 +87,37 @@ const createUnLikeButtonTemplate = () => `
   </button>
 `;
 
+const headerMainPage = (pageTitle, inputPlaceholder) => `
+  <header class="flex flex-wrap p-8 space-y-7 justify-center items-center md:justify-between md:flex-nowrap">
+    <h2 id="title" class="text-3xl text-center font-bold md:text-4xl md:mt-5">
+       ${pageTitle}
+    </h2>       
+        
+    <div class="flex items-center space-x-3 flex-wrap">
+      <div class="flex items-center bg-gray-100 px-2 space-x-4 rounded-lg">    
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 opacity-30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+        <input id="input" type="search" class="bg-gray-100 outline-none py-4" type="text" placeholder="${inputPlaceholder}" />
+        <button type="submit" class="text-white py-3 bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 font-medium rounded-lg text-sm px-5 text-center">Cari</button>
+      </div>
+
+      <div class="flex py-3 rounded-lg text-gray-500 font-semibold cursor-pointer">
+        <span>Provinsi</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </div>
+    </div>
+  </header>
+  <div id="resultMessage" class="text-center mb-5"></div>
+`;
+
 export {
   createCategoriesItemTemplate,
   createCultureItemTemplate,
   createCultureDetailTemplate,
   createLikeButtonTemplate,
   createUnLikeButtonTemplate,
+  headerMainPage,
 };

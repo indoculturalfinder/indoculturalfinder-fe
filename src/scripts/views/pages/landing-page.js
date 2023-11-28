@@ -10,7 +10,7 @@ const LandingPage = {
           <div class="text-center lg:text-left lg:ml-10 mt-10 font-sans">
             <h1 class="max-w-2xl mx-auto px-6 text-xl text-white font-extrabold tracking-tight leading-none sm:px-0 md:text-3xl xl:text-4xl mb-3">Temukan Kekayaan Budaya dan Tradisi yang Penuh Warna!</h1>
             <p class="max-w-2xl mx-auto px-6 font-light text-gray-100 lg:mb-6 text-sm sm:px-0 md:text-base lg:text-xl">Menyelami Keindahan Nusantara Bersama IndoCultureFinder: Jelajahi Warisan Indonesia yang Tak Tertandingi!</p>
-            <a href="#content" class="mt-5 inline-block px-5 py-2 border bg-white text-red-600 font-semibold rounded-xl hover:shadow-lg hover:bg-red-500 hover:text-white transition duration-300">
+            <a href="#content" class="mt-5 inline-block px-5 py-3 bg-white text-red-600 font-semibold rounded-xl hover:shadow-lg hover:bg-red-700 hover:text-white transition duration-300">
               Explore Now
             </a> 
           </div>

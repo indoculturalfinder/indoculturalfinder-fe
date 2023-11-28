@@ -8,6 +8,7 @@ const API_ENDPOINT = {
   FOODS: `${CONFIG.BASE_URL}makanan-khas`,
   CLOTHES: `${CONFIG.BASE_URL}baju-adat`,
   DETAIL: (id) => `${CONFIG.BASE_URL}cultures/${id}`,
+  SEARCH_TDANCE: (tarianName) => `${CONFIG.BASE_URL}tarian/search/name/${tarianName}`,
 };
 
 export default API_ENDPOINT;
