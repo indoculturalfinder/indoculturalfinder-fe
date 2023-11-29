@@ -62,7 +62,7 @@ const createCategoriesItemTemplate = (category) => {
       <div class="px-6 py-4">
         <figcaption class="text-lg font-medium">
           <div class="mb-2 text-2xl font-bold tracking-tight text-gray-900">${category.name}</div>
-          <p class="mb-3 font-normal text-gray-700 text-justify">${category.desc}</p>
+          <p class="mb-3 text-sm sm:text-base font-normal text-gray-700 text-justify">${category.desc}</p>
           <a href="#/${slug}" class="inline-flex py-4 items-center text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 font-medium rounded-lg text-sm px-5 text-center me-2 mb-2">
             Explore
             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
@@ -88,7 +88,7 @@ const createUnLikeButtonTemplate = () => `
 `;
 
 const headerMainPage = (pageTitle, inputPlaceholder) => `
-  <header class="flex flex-wrap p-8 space-y-7 justify-center items-center md:justify-between md:flex-nowrap">
+  <header class="flex flex-wrap p-10 space-y-7 justify-center items-center md:justify-between md:flex-nowrap md:space-x-8">
     <h2 id="title" class="text-3xl text-center font-bold md:text-4xl md:mt-5">
        ${pageTitle}
     </h2>       
