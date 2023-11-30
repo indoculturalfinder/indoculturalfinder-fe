@@ -97,7 +97,7 @@ const LandingPage = {
                 <h4 class="font-semibold text-lg md:text-2xl text-gray-900 mb-6">JavaScript</h4>
                 <p class="px-1 font-normal text-gray-500 text-sm md:text-xl mb-6">JavaScript menjadi bahasa yang kami gunakan dalam membangun website</p>
                 <div class="flex items-center justify-center">
-                  <a href="#content" class="inline-block text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2">
+                  <a href="https://devdocs.io/javascript/" class="inline-block text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2">
                     Learn more
                   </a>
                 </div>
@@ -113,7 +113,7 @@ const LandingPage = {
                 <h4 class="font-semibold text-lg md:text-2xl text-gray-900 mb-6">HTML</h4>
                 <p class="px-1 font-normal text-gray-500 text-sm md:text-xl mb-6">HTML bahasa markup yang kami pakai dalam membangun website ini</p>
                 <div class="flex items-center justify-center">
-                  <a href="#content" class="inline-block text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2">
+                  <a href="https://www.w3schools.com/html/html_intro.asp" class="inline-block text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2">
                     Learn more
                   </a>
                 </div>
@@ -130,7 +130,7 @@ const LandingPage = {
                 <h4 class="font-semibold text-lg md:text-2xl text-gray-900 mb-6">Tailwind</h4>
                 <p class="px-1 font-normal text-gray-500 text-sm md:text-xl mb-6">Tailwind sebagai framework CSS kami dalam membangun website ini</p>
                 <div class="flex justify-center">
-                  <a href="#" class="flex items-center text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2">
+                  <a href="https://v2.tailwindcss.com/docs" class="flex items-center text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2">
                     Learn more           
                   </a>
                 </div>
@@ -146,7 +146,7 @@ const LandingPage = {
                 <h4 class="font-semibold text-lg md:text-2xl text-gray-900 mb-6">Laravel</h4>
                 <p class="px-1 font-normal text-gray-500 text-sm md:text-xl mb-6">Laravel sebagai framework PHP kami dalam backend website ini</p>
                 <div class="flex justify-center">
-                  <a href="#" class="flex items-center text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2">
+                  <a href="https://laravel.com/docs/10.x/readme" class="flex items-center text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2">
                     Learn more           
                   </a>
                 </div>
@@ -162,7 +162,7 @@ const LandingPage = {
                 <h4 class="font-semibold text-lg md:text-2xl text-gray-900 mb-6">Webpack</h4>
                 <p class="px-1 font-normal text-gray-500 text-sm md:text-xl mb-6">Webpack sebagai module bundler kami dalam membangun website ini</p>
                 <div class="flex justify-center">
-                  <a href="#" class="flex items-center text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2">
+                  <a href="https://webpack.js.org/guides/getting-started/" class="flex items-center text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2">
                     Learn more           
                   </a>
                 </div>
