@@ -18,13 +18,37 @@ const TraditionalDance = {
     const header = document.querySelector('#header');
     const titlePage = 'Tarian Adat Nusantara';
     const inputPlaceholder = 'Cari tari adat ..';
-    header.innerHTML += headerMainPage(titlePage, inputPlaceholder);
+    // get provinces
+    const provinces = await CultureSource.getProvinces();
+    header.innerHTML += headerMainPage(titlePage, inputPlaceholder, provinces);
 
     // load all culture datas
     const dances = await CultureSource.traditionalDance();
     const dancesItem = document.querySelector('#items');
     dances.forEach((culture) => {
       dancesItem.innerHTML += createCultureItemTemplate(culture);
+    });
+    // Get the select element
+    const selectProvince = document.querySelector('#provinceSelect');
+    let danceToFilterByProvince = [...dances]; // Make a copy of the original data
+
+    // Add event listener to handle province changes
+    selectProvince.addEventListener('change', () => {
+      // Get the selected province value
+      const selectedProvince = selectProvince.value;
+
+      // Filter dances based on the selected province
+      danceToFilterByProvince = dances.filter(
+        (dance) => dance.province_name === selectedProvince,
+      );
+
+      // Clear existing content
+      dancesItem.innerHTML = '';
+
+      // Render filtered dances
+      danceToFilterByProvince.forEach((culture) => {
+        dancesItem.innerHTML += createCultureItemTemplate(culture);
+      });
     });
 
     // Search functionality

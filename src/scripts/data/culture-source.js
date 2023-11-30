@@ -43,9 +43,47 @@ class CultureSource {
     return responseJson.Categories;
   }
 
+  static async getProvinces() {
+    const response = await fetch(API_ENDPOINT.PROVINCES);
+    const responseJson = await response.json();
+    return responseJson.provinces;
+  }
+
   static async searchTraditionalDance(tarianName) {
     const response = await fetch(
       API_ENDPOINT.SEARCH_TDANCE(tarianName.tarianName),
+    );
+    const responseJson = await response.json();
+    return responseJson.cultures;
+  }
+
+  static async searchTraditionalCeremony(upacaraAdatName) {
+    const response = await fetch(
+      API_ENDPOINT.SEARCH_TCEREMONY(upacaraAdatName.upacaraAdatName),
+    );
+    const responseJson = await response.json();
+    return responseJson.cultures;
+  }
+
+  static async searchTraditionalCloth(bajuAdatName) {
+    const response = await fetch(
+      API_ENDPOINT.SEARCH_TCLOTH(bajuAdatName.bajuAdatName),
+    );
+    const responseJson = await response.json();
+    return responseJson.cultures;
+  }
+
+  static async searchTraditionalFood(makananKhasName) {
+    const response = await fetch(
+      API_ENDPOINT.SEARCH_TFOOD(makananKhasName.makananKhasName),
+    );
+    const responseJson = await response.json();
+    return responseJson.cultures;
+  }
+
+  static async searchTraditionalHouse(rumahAdatName) {
+    const response = await fetch(
+      API_ENDPOINT.SEARCH_THOUSE(rumahAdatName.rumahAdatName),
     );
     const responseJson = await response.json();
     return responseJson.cultures;

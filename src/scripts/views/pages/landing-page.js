@@ -5,17 +5,15 @@ const LandingPage = {
   async render() {
     return `
       <!-- Hero Section Start -->
-      <section class="hero min-h-min w-full bg-red-600">
-        <div class="flex flex-col items-center md:px-10 lg:flex-row justify-center xl:space-x-6">
-          <div class="text-center lg:text-left lg:ml-10 mt-10 font-sans">
-            <h1 class="max-w-2xl mx-auto px-6 text-xl text-white font-extrabold tracking-tight leading-none sm:px-0 md:text-3xl xl:text-4xl mb-3">Temukan Kekayaan Budaya dan Tradisi yang Penuh Warna!</h1>
-            <p class="max-w-2xl mx-auto px-6 font-light text-gray-100 lg:mb-6 text-sm sm:px-0 md:text-base lg:text-xl">Menyelami Keindahan Nusantara Bersama IndoCultureFinder: Jelajahi Warisan Indonesia yang Tak Tertandingi!</p>
-            <a href="#content" class="mt-5 inline-block px-5 py-3 bg-white text-red-600 font-semibold rounded-xl hover:shadow-lg hover:bg-red-700 hover:text-white transition duration-300">
+      <section class="hero min-h-screen bg-red-600">
+        <div class="hero-content lg:mt-[-5rem] flex-col lg:flex-row">
+          <img src="./images/candi.png" alt="candi" class="drop-shadow-2xl" />
+          <div class="p-5">
+            <h1 class="text-3xl md:text-left md:text-5xl font-bold text-white">Temukan Kekayaan Budaya dan Tradisi yang Penuh Warna!</h1>
+            <p class="py-6 text-gray-100 font-light">Menyelami Keindahan Nusantara Bersama IndoCultureFinder: Jelajahi Warisan Indonesia yang Tak Tertandingi!</p>
+            <a href="#content" class="mt-5 inline-block px-5 py-5 bg-white text-red-600 font-semibold rounded-xl hover:shadow-lg hover:bg-red-700 hover:text-white transition duration-300">
               Explore Now
             </a> 
-          </div>
-          <div class="flex flex-col md:mt-10">
-            <img src="./images/candi.png" alt="candi" class="sm:px-36 lg:w-full lg:px-0 lg:flex lg:wfull lg:h-full">
           </div>
         </div>
       </section>
