@@ -55,12 +55,12 @@ const createCategoriesItemTemplate = (category) => {
   const slug = createSlug(category.name);
 
   return `
-    <div class="card w-96 bg-base-100 shadow-xl">
+    <div class="swiper-slide card w-full bg-base-100 image-full">
       <figure>
         <img 
         src="${category.img}"  
         alt="${category.name}"
-        class="w-full h-56 object-cover object-center"
+        class="max-h-[16.5rem] md:max-h-80 w-full object-cover object-center"
       >
       </figure>
       <div class="card-body">
@@ -68,7 +68,7 @@ const createCategoriesItemTemplate = (category) => {
         <p class="text-justify">${category.desc}</p>
         <div class="card-actions justify-end">
           <a href="#/${slug}" class="inline-flex py-4 items-center text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 font-medium rounded-lg text-sm px-5 text-center me-2 mb-2">
-            Explore
+            Jelajahi
             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
             </svg>

@@ -6,7 +6,7 @@ import { StaleWhileRevalidate } from 'workbox-strategies';
 precacheAndRoute(self.__WB_MANIFEST);
 
 const indoCultureApi = new Route(
-  ({ url }) => url.href.startsWith('https://restaurant-api.dicoding.dev'),
+  ({ url }) => url.href.startsWith('https://be.indoculturalfinder.my.id/api/'),
   new StaleWhileRevalidate({
     cacheName: 'indo-culture-api',
   }),

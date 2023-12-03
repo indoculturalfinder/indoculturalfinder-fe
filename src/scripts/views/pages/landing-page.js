@@ -1,5 +1,9 @@
+/* eslint-disable no-undef */
+/* eslint-disable import/no-unresolved */
+import Swiper from 'swiper/bundle';
 import CultureSource from '../../data/culture-source';
 import { createCategoriesItemTemplate } from '../templates/template-creator';
+import 'swiper/css/bundle';
 
 const LandingPage = {
   async render() {
@@ -12,7 +16,7 @@ const LandingPage = {
             <h1 class="text-3xl md:text-left md:text-5xl font-bold text-white">Temukan Kekayaan Budaya dan Tradisi yang Penuh Warna!</h1>
             <p class="py-6 text-gray-100 font-light">Menyelami Keindahan Nusantara Bersama IndoCultureFinder: Jelajahi Warisan Indonesia yang Tak Tertandingi!</p>
             <a href="#content" class="mt-5 inline-block px-5 py-5 bg-white text-red-600 font-semibold rounded-xl hover:shadow-lg hover:bg-red-700 hover:text-white transition duration-300">
-              Explore Now
+              Selengkapnya
             </a> 
           </div>
         </div>
@@ -27,23 +31,29 @@ const LandingPage = {
             
 
       <!-- Culture Section Start -->
-      <section id="content" class="min-h-screen mt-20 font-sans">
-        <h1 class="px-10 text-center font-bold text-red-600 text-2xl md:text-4xl xl:text-5xl" data-aos="zoom-in" data-aos-duration="1000">Ayo Kenali Keragaman Budaya Indonesia!</h1>
-        <p class="px-6 mx-auto text-center mt-1 font-base text-xs sm:text-sm md:text-lg md:px-32" data-aos="zoom-in" data-aos-duration="1000">Yuk, mari kita jelajahi serta mengapresiasi kekayaan keragaman budaya yang ada di Indonesia bersama-sama!</p>
-        <div id="category-list" class="flex flex-wrap px-6 justify-center gap-5 mt-20">
-          <!-- Cards Go Here -->
+      <section id="content" class="min-h-screen font-sans py-10">
+        <h2 class="px-10 text-center font-bold text-red-600 text-3xl md:text-4xl xl:text-5xl" data-aos="zoom-in" data-aos-duration="1000">Ayo Kenali Keragaman Budaya Indonesia!</h3>
+        <div class="divider mx-auto w-[70%] mb-10"></div> 
+        <p class="px-6 mx-auto text-center sm:text-sm mb-8 md:text-lg md:px-32" data-aos="zoom-in" data-aos-duration="1000">Yuk, mari kita jelajahi serta mengapresiasi kekayaan keragaman budaya yang ada di Indonesia bersama-sama!</p>
+        <div class="swiper container max-w-sm md:max-w-2xl"> 
+          <div id="category-list" class="swiper-wrapper">
+            <!-- Cards Go Here -->
+          </div>
+           
+          <div class="swiper-pagination"></div>
         </div>
       </section>  
       <!-- Culture Section End -->
         
 
         <!-- about us -->
-        <section class="min-h-screen overflow-hidden mt-20 font-sans" id="aboutUs">
-          <h1 class="font-bold text-center text-red-600 text-2xl mb-3 md:text-4xl xl:text-5xl" data-aos="zoom-in" data-aos-duration="1000">About Us</h1>
-          <p class="px-6 mx-auto text-center mt-1 font-sans text-xs sm:text-sm md:text-lg md:px-32 lg:px-32" data-aos="zoom-in" data-aos-duration="1000">Kami mempromosikan kekayaan budaya Indonesia,  melalui promosi produk budaya, serta menginspirasi pemahaman, kesadaran dan penghargaan terhadap tradisi, budaya Indonesia. Sambil memberikan edukasi yang menginspirasi, terutama bagi generasi muda, untuk memelihara warisan budaya yang berharga.</p>
-            <div class="flex px-2 mt-14">
+        <section class="min-h-screen overflow-hidden mt-10 font-sans" id="aboutUs">
+          <h1 class="font-bold text-center text-red-600 text-3xl mt-10 mb-3 md:text-4xl xl:text-5xl" data-aos="zoom-in" data-aos-duration="1000">Tentang</h1>
+          <div class="divider mx-auto w-[70%] md:max-w-sm mb:10 md:mb-16"></div> 
+          <p class="px-6 mx-auto text-center mb-28 font-sans text-xs sm:text-sm md:text-lg md:px-32 lg:px-32" data-aos="zoom-in" data-aos-duration="1000">Kami mempromosikan kekayaan budaya Indonesia,  melalui promosi produk budaya, serta menginspirasi pemahaman, kesadaran dan penghargaan terhadap tradisi, budaya Indonesia. Sambil memberikan edukasi yang menginspirasi, terutama bagi generasi muda, untuk memelihara warisan budaya yang berharga.</p>
+          <div class="flex px-2">
               <div class="flex flex-wrap px-6 justify-center gap-5 font-sans">
-                <div class="px-6 mb-5 border rounded-lg shadow-md relative bg-white text-black hover:shadow-xl" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="px-6 mb-5 rounded-lg shadow-md relative bg-white text-black hover:shadow-xl" data-aos="zoom-in" data-aos-duration="1000">
                   <div class="w-14 h-14 justify-center items-center bg-red-200  text-red-600 rounded-full flex absolute -top-7 left-1/2 -translate-x-1/2">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                       <path d="M11.25 4.533A9.707 9.707 0 006 3a9.735 9.735 0 00-3.25.555.75.75 0 00-.5.707v14.25a.75.75 0 001 .707A8.237 8.237 0 016 18.75c1.995 0 3.823.707 5.25 1.886V4.533zM12.75 20.636A8.214 8.214 0 0118 18.75c.966 0 1.89.166 2.75.47a.75.75 0 001-.708V4.262a.75.75 0 00-.5-.707A9.735 9.735 0 0018 3a9.707 9.707 0 00-5.25 1.533v16.103z" />
@@ -53,7 +63,7 @@ const LandingPage = {
                   <p class="mb-5 font-normal text-gray-700 text-sm max-w-md mx-auto text-justify md:text-lg">"Indoculturafinder adalah sebuah situs web yang berdedikasi untuk menjelajahi dan memaparkan kekayaan keragaman 
                   budaya dan tradisi dari seluruh penjuru Nusantara. Melalui platform ini, pengguna dapat mengakses informasi tentang berbagai aspek budaya yang membedakan dan memperkaya Indonesia, termasuk namun tidak terbatas pada adat istiadat, seni, dan tradisi lokal.</p>
                 </div>
-                <div class="px-6 mb-5 border rounded-lg shadow-md bg-white text-black hover:shadow-xl" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="px-6 mb-5 rounded-lg shadow-md bg-white text-black hover:shadow-xl" data-aos="zoom-in" data-aos-duration="1000">
                   <div class="w-14 h-14 justify-center items-center bg-red-200  text-red-600 rounded-full flex absolute -top-7 left-1/2 -translate-x-1/2">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                       <path fill-rule="evenodd" d="M17.663 3.118c.225.015.45.032.673.05C19.876 3.298 21 4.604 21 6.109v9.642a3 3 0 01-3 3V16.5c0-5.922-4.576-10.775-10.384-11.217.324-1.132 1.3-2.01 2.548-2.114.224-.019.448-.036.673-.051A3 3 0 0113.5 1.5H15a3 3 0 012.663 1.618zM12 4.5A1.5 1.5 0 0113.5 3H15a1.5 1.5 0 011.5 1.5H12z" clip-rule="evenodd" />
@@ -65,7 +75,7 @@ const LandingPage = {
                   <p class="mb-5 font-normal text-gray-700 text-sm max-w-md mx-auto text-justify md:text-lg">Tujuan utama dari Indoculturafinder adalah untuk memberikan wawasan yang mendalam dan menghargai kekayaan budaya 
                   yang ada di setiap daerah, serta mempromosikan pemahaman lintas budaya di kalangan pengguna. Dengan menyajikan konten yang informatif dan mendidik, situs ini berperan sebagai sumber pengetahuan yang menghormati serta memperkuat identitas dan keberagaman budaya Indonesia.</p>
                 </div>
-                <div class="px-6 mb-5 border rounded-lg shadow-md bg-white text-black hover:shadow-xl" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="px-6 mb-5 rounded-lg shadow-md bg-white text-black hover:shadow-xl" data-aos="zoom-in" data-aos-duration="1000">
                   <div class="w-14 h-14 justify-center items-center bg-red-200  text-red-600 rounded-full flex absolute -top-7 left-1/2 -translate-x-1/2">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                       <path fill-rule="evenodd" d="M7.502 6h7.128A3.375 3.375 0 0118 9.375v9.375a3 3 0 003-3V6.108c0-1.505-1.125-2.811-2.664-2.94a48.972 48.972 0 00-.673-.05A3 3 0 0015 1.5h-1.5a3 3 0 00-2.663 1.618c-.225.015-.45.032-.673.05C8.662 3.295 7.554 4.542 7.502 6zM13.5 3A1.5 1.5 0 0012 4.5h4.5A1.5 1.5 0 0015 3h-1.5z" clip-rule="evenodd" />
@@ -83,7 +93,8 @@ const LandingPage = {
 
         <!-- our tech -->
           <section class="min-h-screen overflow-hidden mt-20 font-sans" id="ourTech">
-            <h1 class="font-bold font-sans text-center text-red-600 text-2xl mb-3 md:text-4xl xl:text-5xl" data-aos="zoom-in" data-aos-duration="1000">Our Tech</h1>
+            <h1 class="font-bold font-sans text-center text-red-600 text-3xl mb-3 md:text-4xl xl:text-5xl" data-aos="zoom-in" data-aos-duration="1000">Our Tech</h1>
+            <div class="divider mx-auto w-[70%] md:max-w-sm mb-10"></div> 
             <p class="px-6 mx-auto font-sans text-center mt-1 text-xs sm:text-sm md:text-lg md:px-32 lg:px-32" data-aos="zoom-in" data-aos-duration="1000">Teknologi - teknologi yang kami gunakan dalam membangun website ini</p>
             <div class="mt-14 p-6 font-sans grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
               <div class="text-center" data-aos="zoom-in" data-aos-duration="1000">
@@ -173,15 +184,16 @@ const LandingPage = {
 
         <!-- contributor-->
         <section id="contributor" class="min-h-screen mt-13 mb-40">
-            <h1 class="mt-20 font-sans text-3xl text-center text-red-600 font-bold" data-aos="zoom-in" data-aos-duration="1000">Contributor</h1>
+            <h1 class="mt-20 font-sans text-3xl md text-center text-red-600 font-bold  md:text-4xl xl:text-5xl" data-aos="zoom-in" data-aos-duration="1000">Contributor</h1>
+            <div class="divider mx-auto w-[70%] md:max-w-sm mb-10"></div>
             <div class="font-sans grid grid-cols-1 px-12 sm:grid-cols-2 md:p-6 lg:grid-cols-5 gap-6">
             <!-- contributor 1-->
               <div class="container mt-8 " data-aos="zoom-in" data-aos-duration="1000">
                 <div class="flex flex-col">
                   <div class="p-6 flex flex-col items-center">
-                    <img class="w-400 h-400 rounded-lg object-cover" src="./images/sana-twice.webp" alt="profile photo">
-                    <h2 class="mt-5 mb-2 text-bold text-black-400 text-lg text-center">nama contributor</h2>
-                      <p class="mb-2 text-grey font-light text-center">asal univ</p>
+                    <img class="w-400 h-400 rounded-full object-cover" src="./images/contributor-1.webp" alt="profile photo">
+                    <h2 class="mt-5 mb-2 text-bold text-black-400 text-lg text-center">Daffa Ulhaq</h2>
+                      <p class="mb-2 text-grey font-light text-center">Universitas Logistik dan Bisnis Internasional</p>
                   </div>
                 </div>
               </div>
@@ -191,7 +203,7 @@ const LandingPage = {
             <div class="container mt-8 " data-aos="zoom-in" data-aos-duration="1000">
               <div class="flex flex-col">
                 <div class="p-6 flex flex-col items-center">
-                  <img class="w-400 h-400 rounded-lg object-cover" src="./images/sana-twice.webp" alt="profile photo">
+                  <img class="w-400 h-400  object-cover" src="./images/sana-twice.webp" alt="profile photo">
                   <h2 class="mt-5 mb-2 text-bold text-black-400 text-lg text-center">nama contributor</h2>
                     <p class="mb-2 text-grey font-light text-center">asal univ</p>
                 </div>
@@ -203,7 +215,7 @@ const LandingPage = {
             <div class="container mt-8 " data-aos="zoom-in" data-aos-duration="1000">
               <div class="flex flex-col">
                 <div class="p-6 flex flex-col items-center">
-                  <img class="w-400 h-400 rounded-lg object-cover" src="./images/sana-twice.webp" alt="profile photo">
+                  <img class="w-400 h-400  object-cover" src="./images/sana-twice.webp" alt="profile photo">
                   <h2 class="mt-5 mb-2 text-bold text-black-400 text-lg text-center">nama contributor</h2>
                     <p class="mb-2 text-grey font-light text-center">asal univ</p>
                 </div>
@@ -215,7 +227,7 @@ const LandingPage = {
             <div class="container mt-8 " data-aos="zoom-in" data-aos-duration="1000">
               <div class="flex flex-col">
                 <div class="p-6 flex flex-col items-center">
-                  <img class="w-400 h-400 rounded-lg object-cover" src="./images/sana-twice.webp" alt="profile photo">
+                  <img class="w-400 h-400  object-cover" src="./images/sana-twice.webp" alt="profile photo">
                   <h2 class="mt-5 mb-2 text-bold text-black-400 text-lg text-center">nama contributor</h2>
                     <p class="mb-2 text-grey font-light text-center">asal univ</p>
                 </div>
@@ -227,7 +239,7 @@ const LandingPage = {
             <div class="container mt-8 " data-aos="zoom-in" data-aos-duration="1000">
               <div class="flex flex-col">
                 <div class="p-6 flex flex-col items-center">
-                  <img class="w-400 h-400 rounded-lg object-cover" src="./images/sana-twice.webp" alt="profile photo">
+                  <img class="w-400 h-400  object-cover" src="./images/sana-twice.webp" alt="profile photo">
                   <h2 class="mt-5 mb-2 text-bold text-black-400 text-lg text-center">nama contributor</h2>
                     <p class="mb-2 text-grey font-light text-center">asal univ</p>
                 </div>
@@ -244,8 +256,32 @@ const LandingPage = {
     // This function will run after the page is loaded
     const categories = await CultureSource.getCategories();
     const categoriesItem = document.querySelector('#category-list');
-    categories.forEach((category) => {
-      categoriesItem.innerHTML += createCategoriesItemTemplate(category);
+    if (categories) {
+      categories.forEach((category) => {
+        categoriesItem.innerHTML += createCategoriesItemTemplate(category);
+      });
+    } else {
+      const skeletonItem = `
+      <div class="flex flex-col gap-4 w-52">
+        <div class="skeleton h-32 w-full"></div>
+        <div class="skeleton h-4 w-28"></div>
+        <div class="skeleton h-4 w-full"></div>
+        <div class="skeleton h-4 w-full"></div>
+      </div>
+    `;
+      categoriesItem.innerHTML = skeletonItem;
+    }
+
+    // init Swiper:
+    // eslint-disable-next-line no-unused-vars
+    const swiper = new Swiper('.swiper', {
+      // Default parameters
+      slidesPerView: 1,
+      spaceBetween: 20,
+      // Responsive breakpoints
+      pagination: {
+        el: '.swiper-pagination',
+      },
     });
   },
 };

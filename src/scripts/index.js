@@ -2,6 +2,7 @@
 import 'regenerator-runtime';
 import '../styles/input.css';
 import AOS from 'aos';
+
 import App from './views/app';
 import swRegister from './utils/sw-register';
 import 'aos/dist/aos.css';

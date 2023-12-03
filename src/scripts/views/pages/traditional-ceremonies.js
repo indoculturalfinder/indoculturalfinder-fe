@@ -23,9 +23,21 @@ const TraditionalCeremonies = {
 
     const ceremonies = await CultureSource.traditionalCeremonies();
     const ceremoniesItem = document.querySelector('#items');
-    ceremonies.forEach((culture) => {
-      ceremoniesItem.innerHTML += createCultureItemTemplate(culture);
-    });
+    if (ceremonies) {
+      ceremonies.forEach((ceremony) => {
+        ceremoniesItem.innerHTML += createCultureItemTemplate(ceremony);
+      });
+    } else {
+      const skeletonItem = `
+        <div class="flex flex-col gap-4 w-52">
+          <div class="skeleton h-32 w-full"></div>
+          <div class="skeleton h-4 w-28"></div>
+          <div class="skeleton h-4 w-full"></div>
+          <div class="skeleton h-4 w-full"></div>
+        </div>
+      `;
+      ceremoniesItem.innerHTML = skeletonItem.repeat(ceremonies.length);
+    }
 
     // Get the select element
     const selectProvince = document.querySelector('#provinceSelect');

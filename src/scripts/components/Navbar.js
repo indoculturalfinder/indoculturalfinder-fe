@@ -13,24 +13,22 @@ class NavBar extends HTMLElement {
               <span class="self-center text-lg sm:text-2xl font-semibold whitespace-nowrap text-white">Indo Cultural Finder</span>
             </a>
 
-            <div class="navbar__burger inline-block md:hidden">
-              <a href="#" id="hamburgerButton" class="space-y-2 p-3 inline-block md:hidden" tabindex="0" aria-label="Menu" role="button">
-                <div class="w-8 h-0.5 bg-white"></div>
-                <div class="w-8 h-0.5 bg-white"></div>
-                <div class="w-8 h-0.5 bg-white"></div>
-              </a>
+            <div id="hamburgerButton" tabindex="0" role="button" class="btn btn-ghost inline-block md:hidden btn-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
             </div>
 
+            
+
             <div id="navigationDrawer" class="flex flex-col items-start md:hidden md:mt-0 text-gray-900 font-semibold fixed top-0 right-0 h-full w-[50%] md:w-[30rem] bg-white transform translate-x-full transition-transform z-20 shadow-lg">
-              <a href="#" class="w-full py-3 my-3 mx-5 transition ease-in-out duration-500 hover:text-red-700">Home</a>
-              <a href="#content" class="w-full py-3 my-3 mx-5 transition ease-in-out duration-500 hover:text-red-700">Explore Now</a>
-              <a href="#aboutUs" class="w-full py-3 my-3 mx-5 transition ease-in-out duration-500 hover:text-red-700">About Us</a>
+              <a href="#" class="w-full py-3 my-3 mx-5 transition ease-in-out duration-500 hover:text-red-700">Beranda</a>
+              <a href="#content" class="w-full py-3 my-3 mx-5 transition ease-in-out duration-500 hover:text-red-700">Memulai</a>
+              <a href="#aboutUs" class="w-full py-3 my-3 mx-5 transition ease-in-out duration-500 hover:text-red-700">Tentang</a>
             </div>
 
             <div class="hidden text-white md:inline-block">
-              <a href="#" class="mx-5 py-3 transition ease-in-out delay-150 hover:bg-red-700 rounded px-1">Home</a>
-              <a href="#content" class="mx-5 py-3 transition ease-in-out delay-150 hover:bg-red-700 rounded px-1">Explore Now</a>
-              <a href="#aboutUs" class="mx-5 py-3 transition ease-in-out delay-150 hover:bg-red-700 rounded px-1">About Us</a>
+              <a href="#" class="mx-5 py-3 transition ease-in-out delay-150 hover:bg-red-700 rounded px-1">Beranda</a>
+              <a href="#content" class="mx-5 py-3 transition ease-in-out delay-150 hover:bg-red-700 rounded px-1">Memulai</a>
+              <a href="#aboutUs" class="mx-5 py-3 transition ease-in-out delay-150 hover:bg-red-700 rounded px-1">Tentang</a>
             </div>
           </div>
         </nav>

@@ -4,7 +4,7 @@ import { createCultureItemTemplate, headerMainPage } from '../templates/template
 const TraditionalClothes = {
   async render() {
     return `
-      <div class="container">
+      <div class="container ">
         <div id="header"></div>
         <div id="items" class="flex flex-wrap mb-5 justify-center gap-5 md:p-10 md:grid lg:grid md:grid-cols-2 lg:grid-cols-3"></div>
       </div>
