@@ -36,11 +36,13 @@ const LandingPage = {
         <div class="divider mx-auto w-[70%] mb-10"></div> 
         <p class="px-6 mx-auto text-center sm:text-sm mb-8 md:text-lg md:px-32" data-aos="zoom-in" data-aos-duration="1000">Yuk, mari kita jelajahi serta mengapresiasi kekayaan keragaman budaya yang ada di Indonesia bersama-sama!</p>
         <div class="swiper container max-w-sm md:max-w-2xl"> 
-          <div id="category-list" class="swiper-wrapper">
-            <!-- Cards Go Here -->
-          </div>
-           
-          <div class="swiper-pagination"></div>
+        <button id="prevButton" class="swiper-button-prev"></button>
+        <div id="category-list" class="swiper-wrapper">
+        <!-- Cards Go Here -->
+        </div>
+        
+        <div class="swiper-pagination"></div>
+        <button id="nextButton" class="swiper-button-next"></button>
         </div>
       </section>  
       <!-- Culture Section End -->
@@ -281,6 +283,18 @@ const LandingPage = {
       // Responsive breakpoints
       pagination: {
         el: '.swiper-pagination',
+      },
+      // Navigation arrows button
+      navigation: {
+        nextEl: '#nextButton',
+        prevEl: '#prevButton',
+      },
+      // Looping slide
+      loop: true,
+      // Auto play slide
+      autoplay: {
+        delay: 5000,
+        disavleOnInteraction: true,
       },
     });
   },
