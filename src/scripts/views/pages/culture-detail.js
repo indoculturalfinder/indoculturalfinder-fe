@@ -8,8 +8,8 @@ const CultureDetail = {
     return `
       <div class="container">
         <div id="arrow-back" class="place-items-start mt-5 ml-8">
-          <button id="goBackButton" class="btn">
-            <svg class="rotate-180 w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+          <button id="goBackButton" class="btn dark:bg-slate-800">
+            <svg class="rotate-180 dark:text-white w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
             </svg>
           </button>
