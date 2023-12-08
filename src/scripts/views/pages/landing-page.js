@@ -314,51 +314,107 @@ const LandingPage = {
             <!-- contributor 1 end-->
 
             <!-- contributor 2-->
-            <div class="container mt-8" data-aos="zoom-in" data-aos-duration="1000">
+            <a 
+              href="https://www.linkedin.com/in/zulham-prabandanu-59a60b28a/" 
+              class="container mt-8" 
+              data-aos="zoom-in" 
+              data-aos-duration="1000">
               <div class="flex flex-col">
                 <div class="p-6 flex flex-col items-center">
-                  <img class="w-400 h-400  object-cover" src="./images/sana-twice.webp" alt="profile photo">
-                  <h2 class="mt-5 mb-2 text-bold text-black-400 text-lg text-center">nama contributor</h2>
-                    <p class="mb-2 text-grey font-light text-center">asal univ</p>
+                  <div class="avatar">
+                    <div class="w-400 h-400 rounded-full dark:ring dark:ring-primary dark:ring-offset-base-100 dark:ring-offset-2">
+                      <img src="./images/contributor-2.webp" />
+                    </div>
+                  </div>
+                    
+                  <h2 class="mt-5 mb-2 text-bold text-black-400 text-lg text-center">
+                    Zulham Prabandanu
+                  </h2>
+
+                  <p class="mb-2 text-grey font-light text-center">
+                    Universitas Islam Sultan Agung
+                  </p>
                 </div>
               </div>
-            </div>
+            </a>
             <!-- contributor 2 end-->
 
             <!-- contributor 3-->
-            <div class="container mt-8 " data-aos="zoom-in" data-aos-duration="1000">
+            <a 
+              href="https://www.linkedin.com/in/muhammad-ilman-aqilaa-0132b9203/" 
+              class="container mt-8" 
+              data-aos="zoom-in" 
+              data-aos-duration="1000">
               <div class="flex flex-col">
                 <div class="p-6 flex flex-col items-center">
-                  <img class="w-400 h-400  object-cover" src="./images/sana-twice.webp" alt="profile photo">
-                  <h2 class="mt-5 mb-2 text-bold text-black-400 text-lg text-center">nama contributor</h2>
-                    <p class="mb-2 text-grey font-light text-center">asal univ</p>
+                  <div class="avatar">
+                    <div class="w-400 h-400 rounded-full dark:ring dark:ring-primary dark:ring-offset-base-100 dark:ring-offset-2">
+                      <img src="./images/contributor-3.webp" />
+                    </div>
+                  </div>
+                    
+                  <h2 class="mt-5 mb-2 text-bold text-black-400 text-lg text-center">
+                    Muhammad Ilman Aqilaa
+                  </h2>
+
+                  <p class="mb-2 text-grey font-light text-center">
+                    Universitas Logistik dan Bisnis Internasional
+                  </p>
                 </div>
               </div>
-            </div>
+            </a>
             <!-- contributor 3end-->
 
             <!-- contributor 4-->
-            <div class="container mt-8 " data-aos="zoom-in" data-aos-duration="1000">
-              <div class="flex flex-col">
-                <div class="p-6 flex flex-col items-center">
-                  <img class="w-400 h-400  object-cover" src="./images/sana-twice.webp" alt="profile photo">
-                  <h2 class="mt-5 mb-2 text-bold text-black-400 text-lg text-center">nama contributor</h2>
-                    <p class="mb-2 text-grey font-light text-center">asal univ</p>
+            <a 
+            href="https://www.linkedin.com/in/inskie-dev221/" 
+            class="container mt-8" 
+            data-aos="zoom-in" 
+            data-aos-duration="1000">
+            <div class="flex flex-col">
+              <div class="p-6 flex flex-col items-center">
+                <div class="avatar">
+                  <div class="w-400 h-400 rounded-full dark:ring dark:ring-primary dark:ring-offset-base-100 dark:ring-offset-2">
+                    <img src="./images/contributor-4.webp" />
+                  </div>
                 </div>
+                  
+                <h2 class="mt-5 mb-2 text-bold text-black-400 text-lg text-center">
+                  Bryan Samperura
+                </h2>
+
+                <p class="mb-2 text-grey font-light text-center">
+                  Universitas Logistik dan Bisnis Internasional
+                </p>
               </div>
             </div>
+          </a>
             <!-- contributor 4end-->
 
             <!-- contributor 5-->
-            <div class="container mt-8 " data-aos="zoom-in" data-aos-duration="1000">
-              <div class="flex flex-col">
-                <div class="p-6 flex flex-col items-center">
-                  <img class="w-400 h-400  object-cover" src="./images/sana-twice.webp" alt="profile photo">
-                  <h2 class="mt-5 mb-2 text-bold text-black-400 text-lg text-center">nama contributor</h2>
-                    <p class="mb-2 text-grey font-light text-center">asal univ</p>
+            <a 
+            href="https://www.linkedin.com/in/airlangga-maulana-anwar-a4b261296/" 
+            class="container mt-8" 
+            data-aos="zoom-in" 
+            data-aos-duration="1000">
+            <div class="flex flex-col">
+              <div class="p-6 flex flex-col items-center">
+                <div class="avatar">
+                  <div class="w-400 h-400 rounded-full dark:ring dark:ring-primary dark:ring-offset-base-100 dark:ring-offset-2">
+                    <img src="./images/sana-twice.webp" />
+                  </div>
                 </div>
+                  
+                <h2 class="mt-5 mb-2 text-bold text-black-400 text-lg text-center">
+                  Airlangga Maulana Anwar
+                </h2>
+
+                <p class="mb-2 text-grey font-light text-center">
+                  Institut Teknologi Telkom Purwokerto
+                </p>
               </div>
             </div>
+          </a>
             <!-- contributor 5end-->
             </div>
       </section>
