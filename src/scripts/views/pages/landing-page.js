@@ -401,7 +401,7 @@ const LandingPage = {
               <div class="p-6 flex flex-col items-center">
                 <div class="avatar">
                   <div class="w-400 h-400 rounded-full dark:ring dark:ring-primary dark:ring-offset-base-100 dark:ring-offset-2">
-                    <img src="./images/sana-twice.webp" />
+                    <img src="./images/contributor-5.webp" />
                   </div>
                 </div>
                   

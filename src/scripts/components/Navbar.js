@@ -6,11 +6,11 @@ class NavBar extends HTMLElement {
   render() {
     this.innerHTML = `
       <header class="w-full bg-red-600 px-5 dark:bg-slate-800">
-        <nav class="w-full px-4 md:px-10 py-7">
+        <nav class="w-full px-4 md:px-5 lg:px-10 py-7">
           <div class="flex justify-between items-center md:justify-between">
             <a href="#" class="flex items-center">
-              <img src="./favicon.png" alt="IndoCulture" class="mr-2 h-10 w-10" />
-              <span class="self-center text-lg sm:text-2xl font-semibold whitespace-nowrap text-white">Indo Cultural Finder</span>
+              <img src="./favicon.png" alt="IndoCulture" class="mr-2 h-8 w-8 lg:h-10 lg:w-10" />
+              <span class="self-center text-lg lg:text-2xl font-semibold whitespace-nowrap text-white py-3">Indo Cultural Finder</span>
             </a>
 
             <div id="hamburgerButton" tabindex="0" role="button" class="btn btn-ghost inline-block md:hidden btn-circle">
@@ -26,13 +26,13 @@ class NavBar extends HTMLElement {
               <a href="#contact" class="w-full py-3 my-3 mx-5 transition ease-in-out duration-500 hover:text-red-700">Hubungi Kami</a>
             </div>
 
-            <div class="hidden text-white md:inline-block">
-              <a href="#" class="mx-5 py-3 transition ease-in-out delay-150 hover:bg-red-700 rounded px-1">Beranda</a>
-              <a href="#content" class="mx-5 py-3 transition ease-in-out delay-150 hover:bg-red-700 rounded px-1">Konten</a>
-              <a href="#aboutUs" class="mx-5 py-3 transition ease-in-out delay-150 hover:bg-red-700 rounded px-1">Tentang</a>
-              <a href="#tech" class="mx-5 py-3 transition ease-in-out delay-150 hover:bg-red-700 rounded px-1">Teknologi</a>
-              <a href="#contributor" class="mx-5 py-3 transition ease-in-out delay-150 hover:bg-red-700 rounded px-1">Kontributor</a>
-              <a href="#contact" class="mx-5 py-3 transition ease-in-out delay-150 hover:bg-red-700 rounded px-1">Hubungi Kami</a>
+            <div class="hidden text-white text-sm lg:text-base md:inline-block">
+              <a href="#" class="py-3 lg:mx-2 xl:mx-5 transition ease-in-out delay-150 hover:bg-red-700 rounded px-1">Beranda</a>
+              <a href="#content" class="py-3 lg:mx-2 xl:mx-5 transition ease-in-out delay-150 hover:bg-red-700 rounded px-1">Konten</a>
+              <a href="#aboutUs" class="py-3 lg:mx-2 xl:mx-5 transition ease-in-out delay-150 hover:bg-red-700 rounded px-1">Tentang</a>
+              <a href="#tech" class="py-3 lg:mx-2 xl:mx-5 transition ease-in-out delay-150 hover:bg-red-700 rounded px-1">Teknologi</a>
+              <a href="#contributor" class="py-3 lg:mx-2 xl:mx-5 transition ease-in-out delay-150 hover:bg-red-700 rounded px-1">Kontributor</a>
+              <a href="#contact" class="py-3 lg:mx-2 xl:mx-5 transition ease-in-out delay-150 hover:bg-red-700 rounded px-1">Hubungi Kami</a>
             </div>
           </div>
         </nav>
