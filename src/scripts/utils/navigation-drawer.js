@@ -3,10 +3,12 @@ const NavigationDrawer = {
     button.addEventListener('click', (event) => {
       event.preventDefault();
       this._toggleDrawer(event, drawer);
+      content.classList.toggle('blur-lg');
     });
 
     content.addEventListener('click', (event) => {
       this._closeDrawer(event, drawer);
+      content.classList.remove('blur-lg');
     });
   },
 

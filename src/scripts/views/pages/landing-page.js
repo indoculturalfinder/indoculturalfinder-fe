@@ -32,7 +32,7 @@ const LandingPage = {
             
 
       <!-- content section Start -->
-      <section id="content" class="min-h-screen flex flex-col justify-center px-5">
+      <section id="content" class="min-h-screen py-10 flex flex-col justify-center">
       
         <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-red-600 dark:text-white" data-aos="zoom-in" data-aos-duration="1000">
           Ayo Kenali Keragaman Budaya Indonesia!
@@ -56,7 +56,7 @@ const LandingPage = {
         
 
       <!-- about section start -->
-      <section class="min-h-screen flex flex-col justify-center py-10  id="aboutUs">
+      <section class="min-h-screen flex flex-col justify-center p-8  id="aboutUs">
         
         <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-red-600 dark:text-white" data-aos="zoom-in" data-aos-duration="1000">
           Tentang
@@ -124,7 +124,7 @@ const LandingPage = {
       <!-- about section end -->
 
       <!-- tech section start -->
-      <section class="min-h-screen flex flex-col justify-center" id="tech">
+      <section class="min-h-screen p-8 flex flex-col justify-center" id="tech">
       
         <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-red-600 dark:text-white" 
         data-aos="zoom-in" 
@@ -276,7 +276,7 @@ const LandingPage = {
     
 
       <!-- contributor section start -->
-      <section id="contributor" class="min-h-screen flex flex-col justify-center items-center">
+      <section id="contributor" class="min-h-screen p-8 flex flex-col justify-center items-center">
       
         <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-red-600 dark:text-white" data-aos="zoom-in" data-aos-duration="1000">
           Kontributor
@@ -422,7 +422,7 @@ const LandingPage = {
 
 
       <!-- contact section start-->
-      <section class="bg-white dark:bg-gray-900 min-h-screen flex flex-col justify-center" id="contact">
+      <section class="bg-white dark:bg-gray-900 min-h-screen p-8 flex flex-col justify-center" id="contact">
         <div class="px-4 mx-auto max-w-screen-md">
           <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-red-600 dark:text-white">Hubungi kami</h2>
 
