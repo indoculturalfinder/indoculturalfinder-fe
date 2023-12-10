@@ -367,54 +367,54 @@ const LandingPage = {
 
             <!-- contributor 4-->
             <a 
-            href="https://www.linkedin.com/in/inskie-dev221/" 
-            class="container mt-8" 
-            data-aos="zoom-in" 
-            data-aos-duration="1000">
-            <div class="flex flex-col">
-              <div class="p-6 flex flex-col items-center">
-                <div class="avatar">
-                  <div class="w-400 h-400 rounded-full dark:ring dark:ring-primary dark:ring-offset-base-100 dark:ring-offset-2">
-                    <img src="./images/contributor-4.webp" />
-                  </div>
-                </div>
-                  
-                <h2 class="mt-5 mb-2 text-bold text-black-400 text-lg text-center">
-                  Bryan Samperura
-                </h2>
-
-                <p class="mb-2 text-grey font-light text-center">
-                  Universitas Logistik dan Bisnis Internasional
-                </p>
-              </div>
-            </div>
-          </a>
-            <!-- contributor 4end-->
-
-            <!-- contributor 5-->
-            <a 
             href="https://www.linkedin.com/in/airlangga-maulana-anwar-a4b261296/" 
             class="container mt-8" 
             data-aos="zoom-in" 
             data-aos-duration="1000">
-            <div class="flex flex-col">
-              <div class="p-6 flex flex-col items-center">
-                <div class="avatar">
-                  <div class="w-400 h-400 rounded-full dark:ring dark:ring-primary dark:ring-offset-base-100 dark:ring-offset-2">
-                    <img src="./images/contributor-5.webp" />
+              <div class="flex flex-col">
+                <div class="p-6 flex flex-col items-center">
+                  <div class="avatar">
+                    <div class="w-400 h-400 rounded-full dark:ring dark:ring-primary dark:ring-offset-base-100 dark:ring-offset-2">
+                      <img src="./images/contributor-5.webp" />
+                    </div>
                   </div>
-                </div>
-                  
-                <h2 class="mt-5 mb-2 text-bold text-black-400 text-lg text-center">
-                  Airlangga Maulana Anwar
-                </h2>
+                    
+                  <h2 class="mt-5 mb-2 text-bold text-black-400 text-lg text-center">
+                    Airlangga Maulana Anwar
+                  </h2>
 
-                <p class="mb-2 text-grey font-light text-center">
-                  Institut Teknologi Telkom Purwokerto
-                </p>
+                  <p class="mb-2 text-grey font-light text-center">
+                    Institut Teknologi Telkom Purwokerto
+                  </p>
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
+            <!-- contributor 4end-->
+
+            <!-- contributor 5-->
+            <a 
+            href="https://www.linkedin.com/in/inskie-dev221/" 
+            class="container mt-8" 
+            data-aos="zoom-in" 
+            data-aos-duration="1000">
+              <div class="flex flex-col">
+                <div class="p-6 flex flex-col items-center">
+                  <div class="avatar">
+                    <div class="w-400 h-400 rounded-full dark:ring dark:ring-primary dark:ring-offset-base-100 dark:ring-offset-2">
+                      <img src="./images/contributor-4.webp" />
+                    </div>
+                  </div>
+                    
+                  <h2 class="mt-5 mb-2 text-bold text-black-400 text-lg text-center">
+                    Bryan Samperura
+                  </h2>
+
+                  <p class="mb-2 text-grey font-light text-center">
+                    Universitas Logistik dan Bisnis Internasional
+                  </p>
+                </div>
+              </div>
+            </a>
             <!-- contributor 5end-->
             </div>
       </section>
