@@ -2,6 +2,7 @@
 /* eslint-disable import/no-unresolved */
 import Swiper from 'swiper/bundle';
 import emailjs from '@emailjs/browser';
+import Toastify from 'toastify-js';
 import CultureSource from '../../data/culture-source';
 import { createCategoriesItemTemplate } from '../templates/template-creator';
 import 'swiper/css/bundle';
@@ -30,10 +31,8 @@ const LandingPage = {
         class="w-full dark:hidden"/>
       </div>
             
-
       <!-- content section Start -->
       <section id="content" class="min-h-screen py-10 flex flex-col justify-center">
-      
         <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-red-600 dark:text-white" data-aos="zoom-in" data-aos-duration="1000">
           Ayo Kenali Keragaman Budaya Indonesia!
         </h2>
@@ -56,8 +55,7 @@ const LandingPage = {
         
 
       <!-- about section start -->
-      <section class="min-h-screen flex flex-col justify-center p-8  id="aboutUs">
-        
+      <section id="about" class="min-h-screen flex flex-col justify-center p-8">       
         <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-red-600 dark:text-white" data-aos="zoom-in" data-aos-duration="1000">
           Tentang
         </h2>
@@ -67,7 +65,6 @@ const LandingPage = {
         </p>
         
         <div class="mx-auto max-w-6xl grid grid-cols-1 gap-4 px-6 md:grid-cols-3 md:gap-8">
-          
             <div class="px-6 mb-5 rounded-3xl dark:shadow-2xl shadow-lg relative bg-white text-black hover:shadow-xl dark:bg-slate-800" data-aos="zoom-in" data-aos-duration="1000">
               <div class="w-14 h-14 justify-center items-center bg-red-200  text-red-600 rounded-full flex absolute -top-7 left-1/2 -translate-x-1/2">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
@@ -511,21 +508,6 @@ const LandingPage = {
     });
 
     // EmailJs utils
-    const toast = document.getElementById('toast');
-    const toastSuccess = `
-      <div class="toast">
-        <div class="alert alert-info">
-          <span>Pesan kamu berhasil terkirim.</span>
-        </div>
-      </div>
-    `;
-    const toastError = `
-      <div class="toast">
-        <div class="alert alert-danger">
-          <span>Maaf terjadi kesalahan, mohon tunggu beberapa saat lagi.</span>
-        </div>
-      </div>
-    `;
 
     const contactForm = document.getElementById('contact-form');
     async function sendEmail() {
@@ -542,10 +524,22 @@ const LandingPage = {
 
       try {
         await sendEmail(); // Panggil fungsi yang menggunakan async/await
-        toast.innerHTML += toastSuccess;
+        Toastify({
+          text: 'Pesan kamu berhasil dikirim',
+          className: 'info',
+          style: {
+            background: 'linear-gradient(to right, #ff0844, #ffb199)',
+          },
+        }).showToast();
       } catch (error) {
         console.error('FAILED...', error);
-        toast.innerHTML += toastError;
+        Toastify({
+          text: 'Ups! Mohon kirim pesan beberapa saat lagi',
+          className: 'error',
+          style: {
+            background: 'linear-gradient(to right, #cfd9df, #e2ebf0)',
+          },
+        }).showToast();
       }
     });
   },

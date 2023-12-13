@@ -21,28 +21,45 @@ const TraditionalHouse = {
 
     const houses = await CultureSource.traditionalHouses();
     const housesItem = document.querySelector('#items');
-    houses.forEach((culture) => {
-      housesItem.innerHTML += createCultureItemTemplate(culture);
+    if (houses) {
+      houses.forEach((culture) => {
+        housesItem.innerHTML += createCultureItemTemplate(culture);
+      });
+    } else {
+      const skeletonItem = `
+        <div class="flex flex-col gap-4 max-w-sm">
+          <div class="skeleton h-32 w-full"></div>
+          <div class="skeleton h-4 w-28"></div>
+          <div class="skeleton h-4 w-full"></div>
+          <div class="skeleton h-4 w-full"></div>
+        </div>
+      `;
+      housesItem.innerHTML = skeletonItem.repeat(houses.length);
+    }
+    const selectProvince = document.querySelector('#provinceSelect');
+    let housesToFilterByProvince = [...houses];
+
+    // reset button
+    const resetFilterBtn = document.getElementById('resetFilterBtn');
+    resetFilterBtn.addEventListener('click', () => {
+      selectProvince.value = 'All';
+
+      housesItem.innerHTML = '';
+
+      houses.forEach((culture) => {
+        housesItem.innerHTML += createCultureItemTemplate(culture);
+      });
     });
 
-    // Get the select element
-    const selectProvince = document.querySelector('#provinceSelect');
-    let housesToFilterByProvince = [...houses]; // Make a copy of the original data
-
-    // Add event listener to handle province changes
     selectProvince.addEventListener('change', () => {
-      // Get the selected province value
       const selectedProvince = selectProvince.value;
 
-      // Filter houses based on the selected province
       housesToFilterByProvince = houses.filter(
         (house) => house.province_name === selectedProvince,
       );
 
-      // Clear existing content
       housesItem.innerHTML = '';
 
-      // Render filtered houses
       housesToFilterByProvince.forEach((culture) => {
         housesItem.innerHTML += createCultureItemTemplate(culture);
       });
@@ -55,24 +72,23 @@ const TraditionalHouse = {
     inputSearch.addEventListener('change', async () => {
       const keyword = inputSearch.value.toLowerCase();
 
-      // Gunakan CultureSource.searchTraditionalHouse() jika keyword tidak kosong
       const filteredHouses = keyword.length !== 0
-        ? await CultureSource.searchTraditionalHouse({ rumahAdatName: keyword })
+        ? await CultureSource.searchTraditionalHouse({
+          rumahAdatName: keyword,
+        })
         : houses;
 
-      housesItem.innerHTML = ''; // Hapus konten sebelumnya
-      resultMessage.innerHTML = ''; // Hapus pesan hasil
+      housesItem.innerHTML = '';
+      resultMessage.innerHTML = '';
 
       if (filteredHouses.length === 0 && keyword.length !== 0) {
-        // Tampilkan pesan jika tidak ada data yang cocok dan keyword tidak kosong
         resultMessage.innerHTML += `<h3 class="font-semibold text-xl">Tidak ada hasil untuk ${keyword}</h3>`;
       } else {
         resultMessage.innerHTML = keyword.length !== 0
           ? `<h3 class="font-semibold text-xl">Hasil untuk ${keyword}</h3>`
-          : ''; // Tampilkan pesan hasil jika keyword tidak kosong
+          : '';
       }
 
-      // Tampilkan semua tarian jika keyword kosong atau ada data yang cocok
       filteredHouses.forEach((filteredHouse) => {
         housesItem.innerHTML += createCultureItemTemplate(filteredHouse);
       });

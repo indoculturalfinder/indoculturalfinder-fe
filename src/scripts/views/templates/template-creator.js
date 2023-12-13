@@ -1,15 +1,6 @@
 /* eslint-disable no-unused-vars */
 import CONFIG from '../../globals/config';
-
-const createSlug = (text) => text
-  .toString()
-  .toLowerCase()
-  .trim()
-  .replace(/\s+/g, '-') // Replace spaces with -
-  .replace(/[^\w-]+/g, '') // Remove all non-word characters
-  .replace(/--+/g, '-') // Replace multiple - with single -
-// eslint-disable-next-line semi-style
-;
+import createSlug from '../../utils/slug-creator';
 
 const createCultureDetailTemplate = (culture) => `
   <div class="container mx-auto">
@@ -100,30 +91,39 @@ const headerMainPage = (pageTitle, inputPlaceholder, provinces) => {
 
   // Return the header HTML
   return `
-    <header class="flex flex-wrap p-10 space-y-7 justify-center items-center md:justify-between md:flex-nowrap md:space-x-8">
-      <h2 id="title" class="text-4xl tracking-tight font-extrabold dark:text-white text-center md:text-4xl md:mt-5">
+    <header class="flex flex-col p-10 space-y-7 md:justify-between md:flex-nowrap md:space-x-8">
+      <h2 id="title" class="text-center lg:text-start text-4xl tracking-tight font-extrabold dark:text-white md:text-4xl md:mt-5">
         ${pageTitle}
       </h2>  
         
-      <div class="flex items-center justify-center space-x-3 space-y-3 flex-wrap lg:justify-between lg:flex-nowrap">
+      <div class="flex items-center justify-center space-x-3 flex-wrap lg:justify-start lg:flex-nowrap lg:-translate-x-7">
         <div class="flex items-center bg-gray-100 dark:bg-slate-800 px-2 space-x-4 rounded-lg">    
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 opacity-30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
           </svg>
-          <input id="input" type="search" class="bg-gray-100 dark:bg-slate-800 outline-none py-4" placeholder="${inputPlaceholder}" />
+          <input id="input" type="search" class="bg-gray-100 dark:bg-slate-800 outline-none py-3" placeholder="${inputPlaceholder}" />
           <button type="submit" class="text-white py-3 bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 font-medium rounded-lg text-sm px-5 text-center">Cari</button>
         </div>
-          
-        <select id="provinceSelect" class="select select-ghost w-full max-w-xs">
-          <option disabled selected>Provinsi</option>
-          ${provinceListItems}
-        </select>
+
+        <div class="join mt-5 lg:mt-0">
+          <select id="provinceSelect" class="join-item select select-bordered max-w-xs">
+            <option disabled selected>Provinsi</option>
+            ${provinceListItems}
+          </select>
         
+          <button id="resetFilterBtn" class="join-item btn btn-outline">Reset Filter</button>
+        </div>
       </div>
     </header>
     <div id="resultMessage" class="text-center mb-5"></div>
   `;
 };
+
+const loadingPage = () => `
+  <div class="min-h-screen flex flex-col justify-center items-center">
+    <span class="loading loading-dots loading-lg"></span>
+  </div>
+`;
 
 export {
   createCategoriesItemTemplate,
@@ -132,4 +132,5 @@ export {
   createLikeButtonTemplate,
   createUnLikeButtonTemplate,
   headerMainPage,
+  loadingPage,
 };

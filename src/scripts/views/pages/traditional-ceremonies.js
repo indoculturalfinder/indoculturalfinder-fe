@@ -29,7 +29,7 @@ const TraditionalCeremonies = {
       });
     } else {
       const skeletonItem = `
-        <div class="flex flex-col gap-4 w-52">
+        <div class="flex flex-col gap-4 max-w-sm">
           <div class="skeleton h-32 w-full"></div>
           <div class="skeleton h-4 w-28"></div>
           <div class="skeleton h-4 w-full"></div>
@@ -39,25 +39,31 @@ const TraditionalCeremonies = {
       ceremoniesItem.innerHTML = skeletonItem.repeat(ceremonies.length);
     }
 
-    // Get the select element
+    // filter item by provinces
     const selectProvince = document.querySelector('#provinceSelect');
     let ceremoniesToFilterByProvince = [...ceremonies]; // Make a copy of the original data
-
-    // Add event listener to handle province changes
     selectProvince.addEventListener('change', () => {
-      // Get the selected province value
       const selectedProvince = selectProvince.value;
 
-      // Filter ceremonies based on the selected province
       ceremoniesToFilterByProvince = ceremonies.filter(
         (ceremony) => ceremony.province_name === selectedProvince,
       );
 
-      // Clear existing content
       ceremoniesItem.innerHTML = '';
 
-      // Render filtered ceremonies
       ceremoniesToFilterByProvince.forEach((culture) => {
+        ceremoniesItem.innerHTML += createCultureItemTemplate(culture);
+      });
+    });
+
+    // reset button
+    const resetFilterBtn = document.getElementById('resetFilterBtn');
+    resetFilterBtn.addEventListener('click', () => {
+      selectProvince.value = 'All';
+
+      ceremoniesItem.innerHTML = '';
+
+      ceremonies.forEach((culture) => {
         ceremoniesItem.innerHTML += createCultureItemTemplate(culture);
       });
     });
@@ -65,28 +71,24 @@ const TraditionalCeremonies = {
     // Search functionality
     const inputSearch = document.querySelector('#input');
     const resultMessage = document.querySelector('#resultMessage');
-
     inputSearch.addEventListener('change', async () => {
       const keyword = inputSearch.value.toLowerCase();
 
-      // Gunakan CultureSource.searchTraditionalCeremony() jika keyword tidak kosong
       const filteredCeremonies = keyword.length !== 0
         ? await CultureSource.searchTraditionalCeremony({ upacaraAdatName: keyword })
         : ceremonies;
 
-      ceremoniesItem.innerHTML = ''; // Hapus konten sebelumnya
-      resultMessage.innerHTML = ''; // Hapus pesan hasil
+      ceremoniesItem.innerHTML = '';
+      resultMessage.innerHTML = '';
 
       if (filteredCeremonies.length === 0 && keyword.length !== 0) {
-        // Tampilkan pesan jika tidak ada data yang cocok dan keyword tidak kosong
         resultMessage.innerHTML += `<h3 class="font-semibold text-xl">Tidak ada hasil untuk ${keyword}</h3>`;
       } else {
         resultMessage.innerHTML = keyword.length !== 0
           ? `<h3 class="font-semibold text-xl">Hasil untuk ${keyword}</h3>`
-          : ''; // Tampilkan pesan hasil jika keyword tidak kosong
+          : '';
       }
 
-      // Tampilkan semua tarian jika keyword kosong atau ada data yang cocok
       filteredCeremonies.forEach((filteredCeremony) => {
         ceremoniesItem.innerHTML += createCultureItemTemplate(filteredCeremony);
       });

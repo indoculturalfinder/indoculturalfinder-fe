@@ -18,34 +18,55 @@ const TraditionalDance = {
     const header = document.querySelector('#header');
     const titlePage = 'Tarian Adat Nusantara';
     const inputPlaceholder = 'Cari tari adat ..';
+
     // get provinces
     const provinces = await CultureSource.getProvinces();
     header.innerHTML += headerMainPage(titlePage, inputPlaceholder, provinces);
 
-    // load all culture datas
     const dances = await CultureSource.traditionalDance();
     const dancesItem = document.querySelector('#items');
-    dances.forEach((culture) => {
-      dancesItem.innerHTML += createCultureItemTemplate(culture);
-    });
-    // Get the select element
+
+    // Loading response
+    if (dances) {
+      dances.forEach((dance) => {
+        dancesItem.innerHTML += createCultureItemTemplate(dance);
+      });
+    } else {
+      const skeletonItem = `
+        <div class="flex flex-col gap-4 max-w-sm">
+          <div class="skeleton h-32 w-full"></div>
+          <div class="skeleton h-4 w-28"></div>
+          <div class="skeleton h-4 w-full"></div>
+          <div class="skeleton h-4 w-full"></div>
+        </div>
+      `;
+      dancesItem.innerHTML = skeletonItem.repeat(dances.length);
+    }
+
     const selectProvince = document.querySelector('#provinceSelect');
     let danceToFilterByProvince = [...dances]; // Make a copy of the original data
 
-    // Add event listener to handle province changes
+    // reset button
+    const resetFilterBtn = document.getElementById('resetFilterBtn');
+    resetFilterBtn.addEventListener('click', () => {
+      selectProvince.value = 'All';
+
+      dancesItem.innerHTML = '';
+
+      dances.forEach((culture) => {
+        dancesItem.innerHTML += createCultureItemTemplate(culture);
+      });
+    });
+
     selectProvince.addEventListener('change', () => {
-      // Get the selected province value
       const selectedProvince = selectProvince.value;
 
-      // Filter dances based on the selected province
       danceToFilterByProvince = dances.filter(
         (dance) => dance.province_name === selectedProvince,
       );
 
-      // Clear existing content
       dancesItem.innerHTML = '';
 
-      // Render filtered dances
       danceToFilterByProvince.forEach((culture) => {
         dancesItem.innerHTML += createCultureItemTemplate(culture);
       });
@@ -58,24 +79,21 @@ const TraditionalDance = {
     inputSearch.addEventListener('change', async () => {
       const keyword = inputSearch.value.toLowerCase();
 
-      // Gunakan CultureSource.searchTraditionalDance() jika keyword tidak kosong
       const filteredDances = keyword.length !== 0
         ? await CultureSource.searchTraditionalDance({ tarianName: keyword })
         : dances;
 
-      dancesItem.innerHTML = ''; // Hapus konten sebelumnya
-      resultMessage.innerHTML = ''; // Hapus pesan hasil
+      dancesItem.innerHTML = '';
+      resultMessage.innerHTML = '';
 
       if (filteredDances.length === 0 && keyword.length !== 0) {
-        // Tampilkan pesan jika tidak ada data yang cocok dan keyword tidak kosong
         resultMessage.innerHTML += `<h3 class="font-semibold text-xl">Tidak ada hasil untuk ${keyword}</h3>`;
       } else {
         resultMessage.innerHTML = keyword.length !== 0
           ? `<h3 class="font-semibold text-xl">Hasil untuk ${keyword}</h3>`
-          : ''; // Tampilkan pesan hasil jika keyword tidak kosong
+          : '';
       }
 
-      // Tampilkan semua tarian jika keyword kosong atau ada data yang cocok
       filteredDances.forEach((filteredDance) => {
         dancesItem.innerHTML += createCultureItemTemplate(filteredDance);
       });
