@@ -21,7 +21,7 @@ const TraditionalCeremonies = {
     const provinces = await CultureSource.getProvinces();
     header.innerHTML += headerMainPage(titlePage, inputPlaceholder, provinces);
 
-    const ceremonies = await CultureSource.traditionalCeremonies();
+    const ceremonies = await CultureSource.getTraditionalCeremonies();
     const ceremoniesItem = document.querySelector('#items');
     if (ceremonies) {
       ceremonies.forEach((ceremony) => {
@@ -75,7 +75,7 @@ const TraditionalCeremonies = {
       const keyword = inputSearch.value.toLowerCase();
 
       const filteredCeremonies = keyword.length !== 0
-        ? await CultureSource.searchTraditionalCeremony({ upacaraAdatName: keyword })
+        ? await CultureSource.searchTraditionalCeremony({ ceremonyName: keyword })
         : ceremonies;
 
       ceremoniesItem.innerHTML = '';

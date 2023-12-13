@@ -1,8 +1,8 @@
 import API_ENDPOINT from '../globals/api-endpoint';
 
 class CultureSource {
-  static async traditionalClothes() {
-    const response = await fetch(API_ENDPOINT.CLOTHES);
+  static async getTraditionalCostumes() {
+    const response = await fetch(API_ENDPOINT.COSTUMES);
     const responseJson = await response.json();
     return responseJson.result;
   }
@@ -13,25 +13,25 @@ class CultureSource {
     return responseJson.cultures;
   }
 
-  static async traditionalFoods() {
+  static async getTraditionalFoods() {
     const response = await fetch(API_ENDPOINT.FOODS);
     const responseJson = await response.json();
     return responseJson.result;
   }
 
-  static async traditionalHouses() {
+  static async getTraditionalHouses() {
     const response = await fetch(API_ENDPOINT.HOUSES);
     const responseJson = await response.json();
     return responseJson.result;
   }
 
-  static async traditionalDance() {
-    const response = await fetch(API_ENDPOINT.DANCE);
+  static async getTraditionalDances() {
+    const response = await fetch(API_ENDPOINT.DANCES);
     const responseJson = await response.json();
     return responseJson.result;
   }
 
-  static async traditionalCeremonies() {
+  static async getTraditionalCeremonies() {
     const response = await fetch(API_ENDPOINT.CEREMONIES);
     const responseJson = await response.json();
     return responseJson.result;
@@ -49,41 +49,41 @@ class CultureSource {
     return responseJson.provinces;
   }
 
-  static async searchTraditionalDance(tarianName) {
+  static async searchTraditionalDance(danceName) {
     const response = await fetch(
-      API_ENDPOINT.SEARCH_TDANCE(tarianName.tarianName),
+      API_ENDPOINT.SEARCH_DANCE(danceName.danceName),
     );
     const responseJson = await response.json();
     return responseJson.cultures;
   }
 
-  static async searchTraditionalCeremony(upacaraAdatName) {
+  static async searchTraditionalCeremony(ceremonyName) {
     const response = await fetch(
-      API_ENDPOINT.SEARCH_TCEREMONY(upacaraAdatName.upacaraAdatName),
+      API_ENDPOINT.SEARCH_CEREMONY(ceremonyName.ceremonyName),
     );
     const responseJson = await response.json();
     return responseJson.cultures;
   }
 
-  static async searchTraditionalCloth(bajuAdatName) {
+  static async searchTraditionalCostume(costumeName) {
     const response = await fetch(
-      API_ENDPOINT.SEARCH_TCLOTH(bajuAdatName.bajuAdatName),
+      API_ENDPOINT.SEARCH_COSTUME(costumeName.costumeName),
     );
     const responseJson = await response.json();
     return responseJson.cultures;
   }
 
-  static async searchTraditionalFood(makananKhasName) {
+  static async searchTraditionalFood(foodName) {
     const response = await fetch(
-      API_ENDPOINT.SEARCH_TFOOD(makananKhasName.makananKhasName),
+      API_ENDPOINT.SEARCH_FOOD(foodName.foodName),
     );
     const responseJson = await response.json();
     return responseJson.cultures;
   }
 
-  static async searchTraditionalHouse(rumahAdatName) {
+  static async searchTraditionalHouse(houseName) {
     const response = await fetch(
-      API_ENDPOINT.SEARCH_THOUSE(rumahAdatName.rumahAdatName),
+      API_ENDPOINT.SEARCH_HOUSE(houseName.houseName),
     );
     const responseJson = await response.json();
     return responseJson.cultures;

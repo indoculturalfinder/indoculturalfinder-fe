@@ -1,7 +1,7 @@
 import CultureSource from '../../data/culture-source';
 import { createCultureItemTemplate, headerMainPage } from '../templates/template-creator';
 
-const TraditionalClothes = {
+const TraditionalCostumes = {
   async render() {
     return `
       <div class="container ">
@@ -21,7 +21,7 @@ const TraditionalClothes = {
     const provinces = await CultureSource.getProvinces();
     header.innerHTML += headerMainPage(titlePage, inputPlaceholder, provinces);
 
-    const clothes = await CultureSource.traditionalClothes();
+    const clothes = await CultureSource.getTraditionalCostumes();
     const clothesItem = document.querySelector('#items');
 
     // Loading response
@@ -77,7 +77,7 @@ const TraditionalClothes = {
       const keyword = inputSearch.value.toLowerCase();
 
       const filteredClothes = keyword.length !== 0
-        ? await CultureSource.searchTraditionalCloth({ bajuAdatName: keyword })
+        ? await CultureSource.searchTraditionalCostume({ costumeName: keyword })
         : clothes;
 
       clothesItem.innerHTML = '';
@@ -97,4 +97,4 @@ const TraditionalClothes = {
   },
 };
 
-export default TraditionalClothes;
+export default TraditionalCostumes;

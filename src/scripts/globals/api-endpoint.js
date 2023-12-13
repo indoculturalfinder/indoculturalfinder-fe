@@ -2,17 +2,17 @@ import CONFIG from './config';
 
 const API_ENDPOINT = {
   CATEGORIES: `${CONFIG.BASE_URL}categories`,
-  DANCE: `${CONFIG.BASE_URL}tarian`,
-  CEREMONIES: `${CONFIG.BASE_URL}upacara-adat`,
-  HOUSES: `${CONFIG.BASE_URL}rumah-adat`,
-  FOODS: `${CONFIG.BASE_URL}makanan-khas`,
-  CLOTHES: `${CONFIG.BASE_URL}baju-adat`,
+  DANCES: `${CONFIG.BASE_URL}dance`,
+  CEREMONIES: `${CONFIG.BASE_URL}traditional-ceremonies`,
+  HOUSES: `${CONFIG.BASE_URL}traditional-houses`,
+  FOODS: `${CONFIG.BASE_URL}traditional-food`,
+  COSTUMES: `${CONFIG.BASE_URL}traditional-costume`,
   DETAIL: (id) => `${CONFIG.BASE_URL}cultures/${id}`,
-  SEARCH_TDANCE: (tarianName) => `${CONFIG.BASE_URL}tarian/search/name/${tarianName}`,
-  SEARCH_TCEREMONY: (upacaraAdatName) => `${CONFIG.BASE_URL}upacara-adat/search/name/${upacaraAdatName}`,
-  SEARCH_THOUSE: (rumahAdatName) => `${CONFIG.BASE_URL}rumah-adat/search/name/${rumahAdatName}`,
-  SEARCH_TFOOD: (makanankhasName) => `${CONFIG.BASE_URL}makanan-khas/search/name/${makanankhasName}`,
-  SEARCH_TCLOTH: (bajuAdatName) => `${CONFIG.BASE_URL}baju-adat/search/name/${bajuAdatName}`,
+  SEARCH_DANCE: (danceName) => `${CONFIG.BASE_URL}dance/search/name/${danceName}`,
+  SEARCH_CEREMONY: (ceremonyName) => `${CONFIG.BASE_URL}traditional-ceremonies/search/name/${ceremonyName}`,
+  SEARCH_HOUSE: (houseName) => `${CONFIG.BASE_URL}traditional-houses/search/name/${houseName}`,
+  SEARCH_FOOD: (foodName) => `${CONFIG.BASE_URL}traditional-food/search/name/${foodName}`,
+  SEARCH_COSTUME: (costumeName) => `${CONFIG.BASE_URL}traditional-costume/search/name/${costumeName}`,
   PROVINCES: `${CONFIG.BASE_URL}provinces`,
 };
 

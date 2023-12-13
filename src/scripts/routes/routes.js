@@ -1,17 +1,17 @@
 import LandingPage from '../views/pages/landing-page';
-import TraditionalDance from '../views/pages/traditional-dance';
-import TraditionalFood from '../views/pages/traditional-food';
-import TraditionalHouse from '../views/pages/traditional-houses';
+import TraditionalDances from '../views/pages/traditional-dances';
+import TraditionalFoods from '../views/pages/traditional-foods';
+import TraditionalHouses from '../views/pages/traditional-houses';
 import TraditionalCeremonies from '../views/pages/traditional-ceremonies';
-import TraditionalClothes from '../views/pages/traditional-clothes';
+import TraditionalCostumes from '../views/pages/traditional-costumes';
 import CultureDetail from '../views/pages/culture-detail';
 
 const routes = {
   '/': LandingPage, // default page
-  '/baju-adat': TraditionalClothes,
-  '/makanan': TraditionalFood,
-  '/rumah-adat': TraditionalHouse,
-  '/tarian-adat': TraditionalDance,
+  '/baju-adat': TraditionalCostumes,
+  '/makanan': TraditionalFoods,
+  '/rumah-adat': TraditionalHouses,
+  '/tarian-adat': TraditionalDances,
   '/upacara-adat': TraditionalCeremonies,
   '/detail/:id': CultureDetail,
 };

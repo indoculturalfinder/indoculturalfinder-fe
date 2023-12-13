@@ -1,7 +1,7 @@
 import { createCultureItemTemplate, headerMainPage } from '../templates/template-creator';
 import CultureSource from '../../data/culture-source';
 
-const TraditionalHouse = {
+const TraditionalHouses = {
   async render() {
     return `
       <div class="container">
@@ -19,7 +19,7 @@ const TraditionalHouse = {
     const provinces = await CultureSource.getProvinces();
     header.innerHTML += headerMainPage(titlePage, inputPlaceholder, provinces);
 
-    const houses = await CultureSource.traditionalHouses();
+    const houses = await CultureSource.getTraditionalHouses();
     const housesItem = document.querySelector('#items');
     if (houses) {
       houses.forEach((culture) => {
@@ -74,7 +74,7 @@ const TraditionalHouse = {
 
       const filteredHouses = keyword.length !== 0
         ? await CultureSource.searchTraditionalHouse({
-          rumahAdatName: keyword,
+          houseName: keyword,
         })
         : houses;
 
@@ -96,4 +96,4 @@ const TraditionalHouse = {
   },
 };
 
-export default TraditionalHouse;
+export default TraditionalHouses;
