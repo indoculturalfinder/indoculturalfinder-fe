@@ -1,6 +1,9 @@
-## IndoCulturalFinder Frontend (indoculturalfinder-fe)
+<p align="center">
+    <a href="https://www.javascript.com/" target="_blank"><img src="https://raw.githubusercontent.com/indoculturalfinder/infoculturalfinder-be/main/storage/img/Animation%20-%201702738212790.gif" width="150" alt="Laravel Logo"></a>
+    <a href="https://indoculturalfinder.github.io/" target="_blank"><img src="https://github.com/indoculturalfinder/indoculturalfinder-fe/assets/112412781/463c935b-d0e9-4bae-8b9b-e2829440441a" width="150" alt="Laravel Logo"></a>
+</p>
 
-![image](https://github.com/indoculturalfinder/indoculturalfinder-fe/assets/112412781/463c935b-d0e9-4bae-8b9b-e2829440441a)
+## IndoCulturalFinder Frontend (indoculturalfinder-fe)
 
 
 IndoCulturalFinder Frontend (indoculturalfinder-fe) adalah proyek frontend untuk aplikasi IndoCulturalFinder. Aplikasi ini bertujuan untuk memberikan informasi mengenai budaya Indonesia, seperti makanan, tarian, pakaian adat, dan upacara adat.
