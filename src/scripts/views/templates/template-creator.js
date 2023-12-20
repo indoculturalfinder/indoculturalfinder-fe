@@ -84,9 +84,11 @@ const createUnLikeButtonTemplate = () => `
 
 const headerMainPage = (pageTitle, inputPlaceholder, provinces) => {
   const provinceListItems = provinces
-    .map((province) => `
+    .map(
+      (province) => `
       <option value="${province.name}">${province.name}</a></option>
-    `)
+    `,
+    )
     .join('');
 
   // Return the header HTML
@@ -96,7 +98,7 @@ const headerMainPage = (pageTitle, inputPlaceholder, provinces) => {
         ${pageTitle}
       </h2>  
         
-      <div class="flex items-center justify-center space-x-3 flex-wrap lg:justify-start lg:flex-nowrap lg:-translate-x-7">
+      <div class="flex items-center justify-center space-x-3 flex-wrap lg:justify-start lg:-translate-x-9">
         <div class="flex items-center bg-gray-100 dark:bg-slate-800 px-2 space-x-4 rounded-lg">    
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 opacity-30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -106,7 +108,7 @@ const headerMainPage = (pageTitle, inputPlaceholder, provinces) => {
         </div>
 
         <div class="join mt-5 lg:mt-0">
-          <select id="provinceSelect" class="join-item select select-bordered max-w-xs">
+          <select id="provinceSelect" class="join-item select select-bordered w-56">
             <option disabled selected>Provinsi</option>
             ${provinceListItems}
           </select>
