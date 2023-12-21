@@ -11,13 +11,13 @@ const LandingPage = {
   async render() {
     return `
       <!-- Hero Section Start -->
-      <section class="hero min-h-screen flex flex-col justify-center bg-red-600 dark:bg-slate-800">
+      <section tabindex="0" class="hero min-h-screen flex flex-col justify-center bg-red-600 dark:bg-slate-800">
         <div class="hero-content lg:mt-[-5rem] flex-col lg:flex-row">
           <img src="./images/candi.png" alt="candi" class="drop-shadow-2xl" />
           <div class="p-5">
             <h1 class="text-3xl md:text-left md:text-5xl font-bold text-white">Temukan Kekayaan Budaya dan Tradisi yang Penuh Warna!</h1>
             <p class="py-6 text-gray-100 font-light">Menyelami Keindahan Nusantara Bersama IndoCultureFinder: Jelajahi Warisan Indonesia yang Tak Tertandingi!</p>
-            <a href="#content" class="mt-5 inline-block px-5 py-5 bg-white text-red-600 font-semibold rounded-xl hover:shadow-lg hover:bg-red-800 hover:text-white transition duration-300 dark:bg-red-700 dark:text-white">
+            <a href="#content" class="cta mt-5 inline-block px-5 py-5 bg-white text-red-600 font-semibold rounded-xl hover:shadow-lg hover:bg-red-800 hover:text-white transition duration-300 dark:bg-red-700 dark:text-white">
               Selengkapnya
             </a> 
           </div>
@@ -32,7 +32,7 @@ const LandingPage = {
       </div>
             
       <!-- content section Start -->
-      <section id="content" class="min-h-screen py-10 flex flex-col justify-center">
+      <section tabindex="0" class="min-h-screen py-10 flex flex-col justify-center">
         <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-red-600 dark:text-white" data-aos="zoom-in" data-aos-duration="1000">
           Ayo Kenali Keragaman Budaya Indonesia!
         </h2>
@@ -41,7 +41,7 @@ const LandingPage = {
           Yuk, mari kita jelajahi serta mengapresiasi kekayaan keragaman budaya yang ada di Indonesia bersama-sama!
         </p>
 
-        <div class="swiper container max-w-sm md:max-w-2xl"> 
+        <div id="content" class="swiper container max-w-sm md:max-w-2xl"> 
           <button id="prevButton" class="swiper-button-prev"></button>
           <div id="category-list" class="swiper-wrapper">
           <!-- Cards Go Here -->
@@ -55,7 +55,7 @@ const LandingPage = {
         
 
       <!-- about section start -->
-      <section id="about" class="min-h-screen flex flex-col justify-center p-8">       
+      <section tabindex="0" id="about" class="min-h-screen flex flex-col justify-center p-8">       
         <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-red-600 dark:text-white" data-aos="zoom-in" data-aos-duration="1000">
           Tentang
         </h2>
@@ -121,7 +121,7 @@ const LandingPage = {
       <!-- about section end -->
 
       <!-- tech section start -->
-      <section class="min-h-screen p-8 flex flex-col justify-center" id="tech">
+      <section tabindex="0" class="min-h-screen p-8 flex flex-col justify-center" id="tech">
       
         <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-red-600 dark:text-white" 
         data-aos="zoom-in" 
@@ -273,7 +273,7 @@ const LandingPage = {
     
 
       <!-- contributor section start -->
-      <section id="contributor" class="min-h-screen p-8 flex flex-col justify-center items-center">
+      <section tabindex="0" id="contributor" class="min-h-screen p-8 flex flex-col justify-center items-center">
       
         <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-red-600 dark:text-white" data-aos="zoom-in" data-aos-duration="1000">
           Kontributor
@@ -419,7 +419,7 @@ const LandingPage = {
 
 
       <!-- contact section start-->
-      <section class="bg-white dark:bg-gray-900 min-h-screen p-8 flex flex-col justify-center" id="contact">
+      <section tabindex="0" class="bg-white dark:bg-gray-900 min-h-screen p-8 flex flex-col justify-center" id="contact">
         <div class="px-4 mx-auto max-w-screen-md">
           <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-red-600 dark:text-white">Hubungi kami</h2>
 

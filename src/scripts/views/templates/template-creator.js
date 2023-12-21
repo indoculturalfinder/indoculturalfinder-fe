@@ -93,12 +93,12 @@ const headerMainPage = (pageTitle, inputPlaceholder, provinces) => {
 
   // Return the header HTML
   return `
-    <header class="flex flex-col p-10 space-y-7 md:justify-between md:flex-nowrap md:space-x-8">
+    <div class="p-10 space-y-7">
       <h2 id="title" class="text-center lg:text-start text-4xl tracking-tight font-extrabold dark:text-white md:text-4xl md:mt-5">
         ${pageTitle}
       </h2>  
         
-      <div class="flex items-center justify-center space-x-3 flex-wrap lg:justify-start lg:-translate-x-9">
+      <div class="flex items-center justify-center lg:space-x-3 flex-wrap lg:justify-start">
         <div class="flex items-center bg-gray-100 dark:bg-slate-800 px-2 space-x-4 rounded-lg">    
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 opacity-30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -116,7 +116,7 @@ const headerMainPage = (pageTitle, inputPlaceholder, provinces) => {
           <button id="resetFilterBtn" class="join-item btn btn-outline">Reset Filter</button>
         </div>
       </div>
-    </header>
+    </div>
     <div id="resultMessage" class="text-center mb-5"></div>
   `;
 };

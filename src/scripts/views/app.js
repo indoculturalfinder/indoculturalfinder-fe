@@ -43,6 +43,26 @@ class App {
       console.error('Error rendering page:', error);
       this._content.innerHTML = '<p>Oops, something went wrong...</p>';
     }
+
+    document.body.addEventListener('click', (event) => {
+      const { target } = event;
+
+      if (target.matches('.skip-link')) {
+        event.preventDefault();
+        const targetElement = document.getElementById('content')
+          || document.getElementById('items');
+        targetElement.tabIndex = -1;
+        targetElement.focus();
+      } else if (
+        target.matches('.cta')
+      ) {
+        event.preventDefault();
+        const targetElement = document.getElementById('content');
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+        targetElement.tabIndex = -1;
+        targetElement.focus();
+      }
+    });
   }
 }
 
