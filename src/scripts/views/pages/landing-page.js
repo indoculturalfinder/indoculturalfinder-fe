@@ -41,14 +41,16 @@ const LandingPage = {
           Yuk, mari kita jelajahi serta mengapresiasi kekayaan keragaman budaya yang ada di Indonesia bersama-sama!
         </p>
 
-        <div id="content" class="swiper container max-w-sm md:max-w-2xl"> 
-          <button id="prevButton" class="swiper-button-prev"></button>
-          <div id="category-list" class="swiper-wrapper">
-          <!-- Cards Go Here -->
-        </div>
-        
-        <div class="swiper-pagination"></div>
-          <button id="nextButton" class="swiper-button-next"></button>
+        <div class="p-5">  
+          <div id="content" class="swiper container max-w-sm md:max-w-2xl"> 
+            <button id="prevButton" class="swiper-button-prev"></button>
+            <div id="category-list" class="swiper-wrapper">
+            <!-- Cards Go Here -->
+          </div>
+          
+          <div class="swiper-pagination"></div>
+            <button id="nextButton" class="swiper-button-next"></button>
+          </div>
         </div>
       </section>  
       <!-- content section End -->

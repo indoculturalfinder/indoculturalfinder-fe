@@ -98,8 +98,8 @@ const headerMainPage = (pageTitle, inputPlaceholder, provinces) => {
         ${pageTitle}
       </h2>  
         
-      <div class="flex items-center justify-center lg:space-x-3 flex-wrap lg:justify-start">
-        <div class="flex items-center bg-gray-100 dark:bg-slate-800 px-2 space-x-4 rounded-lg">    
+      <div class="flex items-center justify-center md:space-x-5 flex-wrap lg:justify-start">
+        <div class="flex items-center max-w-xs md:w-auto bg-gray-100 dark:bg-slate-800 px-2 space-x-4 rounded-lg">    
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 opacity-30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
           </svg>
@@ -107,8 +107,8 @@ const headerMainPage = (pageTitle, inputPlaceholder, provinces) => {
           <button type="submit" class="text-white py-3 bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 font-medium rounded-lg text-sm px-5 text-center">Cari</button>
         </div>
 
-        <div class="join mt-5 lg:mt-0">
-          <select id="provinceSelect" class="join-item select select-bordered w-56">
+        <div class="join mt-5 md:mt-0">
+          <select id="provinceSelect" class="join-item select select-bordered max-w-[10rem] md:w-auto">
             <option disabled selected>Provinsi</option>
             ${provinceListItems}
           </select>
