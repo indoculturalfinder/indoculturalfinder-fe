@@ -103,7 +103,7 @@ const headerMainPage = (pageTitle, inputPlaceholder, provinces) => {
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 opacity-30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
           </svg>
-          <input id="input" type="search" class="bg-gray-100 dark:bg-slate-800 outline-none py-3" placeholder="${inputPlaceholder}" />
+          <input id="input" type="search" class="max-w-[8.5rem] md:w-auto bg-gray-100 dark:bg-slate-800 outline-none py-3" placeholder="${inputPlaceholder}" />
           <button type="submit" class="text-white py-3 bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 font-medium rounded-lg text-sm px-5 text-center">Cari</button>
         </div>
 
